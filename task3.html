@@ -2,105 +2,133 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />  
 	<title>魔镜</title>
 	<style type="text/css">
+		*{
+			/*margin: 0;
+			padding: 0;*/
+		}
 		html{
 			font-size: 62.5%;
+		/*	-webkit-text-size-adjust:none;*/
 		}
 		body{
 			background-color: #6CCDD5;
-			font-size: 1.2rem;
 		}
 		.first{
-			float: left;
-			margin-left: 1%;
-			width: 5%;
+		/*	float: left;*/
+			margin-left: 5.5%;
+			padding-top: 4.3%;
+			width: 8.4%;
 			overflow: hidden;
 		}
 		.first img{
-			width: 100%;
+			max-width: 100%;
+			height: auto;
 		}
 		.header{
-			margin-left: 25%;
-			color: #fff;
 
+			padding-top: 3.5%;
+			margin-left:30.8%;
+			color: #fff;
 		}
 		.second{
-			float: left;
-			width: 7%;
-			overflow: hidden;
-			margin-left: 20%;
-			padding: 1%;
+			display: inline-block;
 		}
 		.second img{
-			width: 100%;
-			height: 
+			max-width: 100%;
+			height: auto;
 		}
-		h1{
-			font-size: 5rem;
-			font-family: "Adobe 黑体 Std";
-			margin-bottom: 0;
+		.header .head{
+			display: inline-block;
 		}
-		.header h4{
-			font-size: 1.7rem;
+		.header .head .oneheader{
+		/*	float: left;*/
+			font-size:4.5rem;
+			font-family: " 黑体 ";
+			margin:0 ;
+			text-align: left;
+			
+		}
+		.header .twoheader{
+
+			font-size: 1.6rem;
 			margin-top: 0;
 			color:#fff;
 			font-family: "Adobe 黑体 Std";
 		}
-		.article{
-			
-			font-size: 1.5rem;
-			color: #fff;
-			/*text-align: center;*/
-
-		}
-		.o{
+		.article {
+			padding-top:11.1%;
 			font-family: "Hiragino Sans GB";
-			padding: 1% 0;
-			text-align: center;
+			color: #fff;
 		}
-		
-	
-		
+		.article p{
+			text-align: left;
+			padding-left: 14.1%;
+			font-size: 3vw;
+		}
+
 		.leftphoto{
-			float: left;
+		display: inline-block;
+		float: left;
+		padding: 5%;
+		}
+		.leftphoto img{
+			max-width: 100%;
+			height: auto;
+		}
+		.leftfooter{
+			display: block;
 			font-family: "Adobe 黑体 Std";
+			text-align: center;
+			font-size: 2vw;
 			color:#fff;
 		}
 		.rightphoto{
-			float: right;
+		display: inline-block;
+		float: right;
+		padding: 5%;
+		}
+		.rightphoto img{
+			width: 100%;
+			height: auto;
+		}
+		
+		.rightfooter{
+			display:block;
 			font-family: "Adobe 黑体 Std";
+			text-align:center;
+			font-size: 2vw;
 			color:#fff;
 		}
 	</style>
 </head>
 <body>
 	<div>
-		<span class="first"><img src="C:\Users\Administrator\Desktop\学习截图\2.png"></span>
+		<span class="first"><img src="C:\Users\Administrator\Desktop\学习截图\2.png"></span> 
 		<div id="header" class="header">
 			<span class="second"><img src="C:\Users\Administrator\Desktop\学习截图\3.png"></span>
-			<h1>葡萄藤</h1>
-			<h4>www.ppteng.com</h4>
+			<div  class="head"><p class="oneheader">葡萄藤</p>
+			<p class="twoheader">www.ppteng.com</p>
+			</div>
+		</div>
 		</div>
 		<div class="article">
-			<div class="o">葡萄藤轻游戏专注于桌游领域，提</div>
-			<div class="o">供在线杀人游戏，捉鬼，炸狼堡等</div>
-			<div class="o">多种聚会游戏，以下线下聚会桌游</div>
-			<div class="o">道具.<div>
+		<p>葡萄藤轻游戏专注于桌游领域，提</p>
+		<p>供在线杀人游戏，捉鬼，炸狼堡等</p>
+		<P>多种聚会游戏，以下线下聚会桌游</P>
+		<P>道具.</P></div>
 		</div>
 		<div class="footer">
-		<div class="leftphoto"><span class="third">
-			<img src="C:\Users\Administrator\Desktop\学习截图\1.png">
-		</span>
-			
-			<span>290560933</span>	
-			</div>
+		<div class="leftphoto">
+			<img src="C:\Users\Administrator\Desktop\学习截图\1.png"/>	
+			<span class="leftfooter">290560933</span>
+		</div>
 			<div class="rightphoto">
-			<span class="four">
-			<img src="C:\Users\Administrator\Desktop\学习截图\4.png">
-		</span>
 			
-			<span>BJTTeng</span>
+			<img src="C:\Users\Administrator\Desktop\学习截图\4.png">
+			<span class="rightfooter">BJTTeng</span>
 			</div>
 		</div>
 	</div>
