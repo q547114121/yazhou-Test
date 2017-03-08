@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />  
 	<title>魔镜</title>
 	<style type="text/css">
 		*{
@@ -17,38 +17,41 @@
 			background-color:  #6CCDD5;
 		}
 		.first{
-			margin-top:5%;
-			margin-left: 5%;
-			max-width: 60%;
+			margin-top:1%;
+			margin-left:1%;
+			max-width: 100%;
 		}
-		.header {
+		.main-header {
 		text-align: center;
 		}
-		.header .second{
+		.main-header .second{
 			max-width: 0px；
 		}
-		.header .head{
+		.main-header .head{
 			display: inline-block;
 		}
-		.header .head p{
+		.main-header .head p{
 			color:#fff;
 			font-family: "黑体"；
 			margin:0px;
 
 		}
-		.header .head .oneheader{
+		.main-header .head .first-header{
 			font-size: 4rem;
+			font-family: "黑体";
 		}
-		.header .head .twoheader{
+		.main-header .head .second-header{
 			font-size: 1rem;
+			font-family: "黑体";
 		}
 		.article{	
-			margin: 12% 10%;
+			margin: 10% 20% 15%;
 			color:#fff;
 			font-family: "黑体"；
 		}
 		.article .one{
-			font-size: 2rem;
+
+			font-size: 1rem;
 			line-height: 2.6rem;
 		}
 		.footer{
@@ -58,14 +61,15 @@
 			max-width: 60%;
 			margin-bottom: 2%;
 		}
-		.leftphoto{
+		.left-photo{
 			float: left;
 			margin-left: 20%;
 			color: #fff;
+			text-align: center;
 		}
 		
 		
-		.rightphoto{
+		.right-photo{
 			float: right;
 			margin-right: 20%;
 			color: #fff;
@@ -80,11 +84,11 @@
 </head>
 <body>
 	<div>
-		<div><img class="first" src="C:\Users\Administrator\Desktop\学习截图\2.png"></div>
-		<div id="header" class="header">
-			<img class="second" src="C:\Users\Administrator\Desktop\学习截图\3.png">
-			<div  class="head"><p class="oneheader">葡萄藤</p>
-			<p class="twoheader">www.ppteng.com</p>
+		<div class="first"><img  src="photo\two.png"></div>
+		<div  class="main-header">
+			<img class="second" src="photo\three.png">
+			<div  class="head"><p class="first-header">葡萄藤</p>
+			<p class="second-header">www.ppteng.com</p>
 			</div>
 		</div>
 		</div>
@@ -94,13 +98,13 @@
 		</div>
 		</div>
 		<div class="footer">
-		<div class="leftphoto">
-			<img  class="left" src="C:\Users\Administrator\Desktop\学习截图\1.png"/>	
+		<div class="left-photo">
+			<img  class="left" src="photo\one.png"/>	
 			<p>290560933</p>
 		</div>
-			<div class="rightphoto">
+			<div class="right-photo">
 			
-			<img  class="right" src="C:\Users\Administrator\Desktop\学习截图\4.png">
+			<img  class="right" src="photo\four.png">
 			<p>BJTTeng<p>
 			</div>
 		</div>
