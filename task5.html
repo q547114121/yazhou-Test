@@ -5,11 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>个人登录页</title>
 	<style type="text/css">
+		@media only screen and (min-width: 320px) and (max-width: 480px) {
+				html{
+				font-size: 80%;
+				}
+		    }
+		@media only screen and (min-width: 481px) and (max-width:767px) {
+				html{
+					font-size: 100%;
+				}
+			}
+		@media only screen and (min-width: 768px) and (max-width: 1024px) {
+				html{
+					font-size: 130%;
+				}
+			}
+		@media only screen and (min-width: 1025px) {
+				html{
+					font-size: 130%;
+				}
+			}
 		body{
 			margin:0;
 			padding: 0;
 		}
-		
 		.top-logo-header{
 		 position: fixed;
 	     z-index: 1;
@@ -17,29 +36,93 @@
 		}
 		.top-text-header{
 		 color: #fff;
-		 font-size: 3rem;
+		 font-size:3rem;
 		 width: 100%;
 		 background-color: #5fc0cd;
 		 position: fixed;
 		text-align: center;
 		}
 		.content{
-			padding-top: 4rem;
-		}
-		.top-content{
 
+			padding-top: 3.4rem;
+			padding-bottom: 6rem;
+			overflow-y: scroll;
+			-webkit-overflow-scrolling:touch;
+		}
+		.content .top-content{
+			height: 10rem;
 			background-image: url(photo/task5-2.png);
 			background-repeat: no-repeat;
-			background-size: 100%;
+			background-size: cover;
+		}
+		.content .top-content .photo{
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 14rem;
+		}
+		.content .top-content .photo img{
+			max-width: 100%;
+			width: 4.8rem;
+			height: 4.8rem;
+			margin: 0 2rem;
+		}
+		.content .top-content .name-adress{
+			display: inline-block;
+			margin-bottom: 4rem;
+			vertical-align: middle;
+			line-height: 2rem;
+			color: #fff;
+		}
+
+		.name-adress .name{
+			font-size: 1.5rem;
+		}
+		.name-adress .adress{
+			font-size: 1.2rem;
+		}
+		.introduce-list{
+			list-style: none;
+		}
+		.introduce-list li{
+			border-bottom: 1px solid #d8d8d8;
+			line-height: 3rem;
+			font-size: 1.5rem;
+		}
+		.introduce-list .person-skill img{
+			vertical-align: middle;
+			margin:0 1rem;
+			margin-left: -1.5rem; 
+		}
+		.introduce-list .person-condition img{
+			vertical-align: middle;
+		}
+		.introduce-list .text-color{
+			color: #999999;
+		}
+		.introduce-list .work-length,.star,.work-serve{
+			margin-left: 1rem;
+		}
+		.introduce-list .work-price{
+			color: red;
+			margin-left: 1rem;
+		}
+		.footer{
+			width: 100%;
+			height:6rem;
+			position: fixed;
+			bottom: 0;
+		/*	padding-top: 6rem;*/
+			background-color: #fff;
 		}
 		.footer .left-footer{
+			
 			border: 1px solid #5fc0cd;
 			border-radius: 0.4rem;
 			width: 40%;
 			height: 4rem;
-			position: fixed;
+			position:absolute;
 			bottom: 0;
-			margin: 0 0 5% 5%;
+			margin: 0 0 3% 5%;
 			text-align: center;
 		}
 		.footer .left-footer a{
@@ -56,9 +139,9 @@
 			background-color: #5fc0cd;
 			width: 40%;
 			height: 4rem;
-			position: fixed;
+			position: absolute;
 			bottom: 0;	
-			margin: 0 0 5% 55%;
+			margin: 0 0 3% 55%;
 			text-align: center;
 		}
 		.footer .right-footer a{
@@ -83,22 +166,23 @@
 	<div class="content">
 		<div class="top-content">
 			<div class="photo"><img src="photo/task5-3.png"></div>
-			<div>
-				<div>高素雅 51岁</div> 
-				<div>
+			<div class="name-adress">
+				<span class="name">高素雅 51岁</span> 
+				<div class="adress">
 					<img src="photo/task5-4.png">
-					<div>北京.通州.果园</div>
-					</div>
+					<span>北京.通州.果园</span>
+				</div>
 			</div>
+			
 		</div>	
-	<div class="introduce-list">
-		<div class="person-skill"></div>
-		<div class="person-condition"></div>
-		<div class="person-work-length"></div>
-		<div class="person-work-time"></div>
-		<div class="person-work-price"></div>
-		<div class="person-introduce"></div>
-	</div>
+	<ul class="introduce-list">
+		<li class="person-skill"><img src="photo/task5-7.png"> 专业技能</li>
+		<li class="person-condition"><img src="photo/task5-5.png"><span>住家</span><img src="photo/task5-5.png" class="star"><span>不含餐</span></li>
+		<li class="person-work-length"><span class="text-color">从业年限</span><span class="work-length">0~3年</span></li>
+		<li class="person-work-time"><span class="text-color">工作时间</span><span class="work-length">全天</span></li>
+		<li class="person-work-price"><span class="text-color">服务价格</span><span class="work-price">25元/小时</span></li>
+		<li class="person-work-serve"><span class="text-color"> 自我介绍</span><span class="work-serve">可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人。</span></li>
+	</ul>
 	</div>
 	<div class="footer">
 		<div class="left-footer"><a href="">留言</a></div>	
