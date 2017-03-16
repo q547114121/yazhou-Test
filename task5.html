@@ -46,8 +46,8 @@
 			
 			padding-top: 3.4rem;
 			padding-bottom: 6rem;
-			overflow-y: scroll;
-			-webkit-overflow-scrolling:touch;
+		
+			
 		}
 		.content .top-content{
 			width: 100%;
@@ -83,24 +83,27 @@
 		}
 		.introduce-list{
 			list-style: none;
+			width: 100%;
 		}
 		.introduce-list li{
 			border-bottom: 1px solid #d8d8d8;
 			line-height: 3rem;
 			font-size: 1.5rem;
 		}
-		.introduce-list .person-skill img{
+		.introduce-list .person-skill .blue{
 			vertical-align: middle;
-			margin:0 1rem;
-			margin-left: -1.5rem; 
+			margin-left: -1.2rem;
+			padding:0 0.2rem;
+			background-color: #5fc0cd;
 		}
 		.introduce-list .person-condition img{
 			vertical-align: middle;
+			padding-bottom: 0.4rem;
 		}
 		.introduce-list .text-color{
 			color: #999999;
 		}
-		.introduce-list .work-length,.star{
+		.introduce-list .work-length,.star,.skill{
 			margin-left: 1rem;
 		}
 		.introduce-list .work-price{
@@ -110,7 +113,7 @@
 		.introduce-list .work-serve{
 			margin-left: 1rem;
 			display: inline-block;
-			width: 50%;
+			width: 70%;
 			vertical-align: top;
 		}
 		.footer{
@@ -182,7 +185,7 @@
 			
 		</div>	
 	<ul class="introduce-list">
-		<li class="person-skill"><img src="photo/task5-7.png"> 专业技能</li>
+		<li class="person-skill"><span class="blue"></span> <span class="skill">专业技能<span></li>
 		<li class="person-condition"><img src="photo/task5-5.png"><span>住家</span><img src="photo/task5-5.png" class="star"><span>不含餐</span></li>
 		<li class="person-work-length"><span class="text-color">从业年限</span><span class="work-length">0~3年</span></li>
 		<li class="person-work-time"><span class="text-color">工作时间</span><span class="work-length">全天</span></li>

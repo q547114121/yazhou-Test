@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>护工</title>
+	<link rel="stylesheet" type="text/css" href="http:////at.alicdn.com/t/font_kzb2dtlqymvlsor.css">
+	<style type="text/css">
+		@media only screen and (min-width: 320px) and (max-width: 480px) {
+				html{
+				font-size: 62.5%;
+				}
+			}@media only screen and (min-width: 481px) and (max-width:767px) {
+				html{
+					font-size: 80%;
+				}
+			}
+			@media only screen and (min-width: 768px) and (max-width: 1024px) {
+				html{
+					font-size: 100%;
+				}
+			}
+			@media only screen and (min-width: 1025px) {
+				html{
+					font-size: 120%;
+				}
+			}
+		body{
+			margin: 0;
+			padding: 0;
+		}
+	
+		.header{
+			width: 100%;
+			background-color: #5cc3d2;
+			height:4.8rem;
+			position: fixed;
+			top:0;
+		}
+		.header .button{
+			width: 100%;
+			display: inline-block;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 4.8rem;
+		}
+		.header .first-button{
+			vertical-align: middle;
+			margin-right: -0.3rem;
+			padding: 0;
+			border: 0;
+			height: 3.8rem;
+			width: 8rem;
+			font-size: 2rem;
+			color: #fff;
+			border-radius: 0.4rem;
+			background-color: #53a8b4;
+		}
+		
+		.header .second-button{
+			vertical-align: middle;
+			padding: 0;
+			border: 0;
+			height: 3.8rem;
+			width: 5em;
+			font-size: 2rem;
+			background-color: #fff;
+			color: #6CCDD5;
+			border-radius: 0.4rem;
+		}
+		.header .button a{
+			display: inline-block;
+			width: 1.8rem;
+			height:1.8rem;
+			position: absolute;
+			right: 0.8rem;
+			top:0.6rem;
+		}
+		.header .button a img{
+			max-width: 100%;
+			width: 100%;
+		}
+		.main{
+			padding-top: 4.8rem;
+			padding-bottom:8rem;
+			/*overflow-y:scroll;*/
+		}
+		.main .top-nav {
+			width: 100%;
+			height: 4rem;
+			border: 1px solid #d8d8d8;
+			vertical-align: middle;
+		}
+		.main .top-nav ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			height: 4rem;
+		}
+		.main .top-nav .ul-first-nav .li-first-nav{
+			float: left;
+			height: 4rem;
+			width: 32.9%;
+			text-align: center;
+			font-size: 2rem;
+			color: #d8d8d8;
+			border:0;
+			border-left: 1px solid #d8d8d8;
+			line-height: 4rem;
+		}
+		.main .top-nav .ul-first-nav .one-first-nav{
+			border:0;
+		}
+		.main .top-nav .ul-first-nav i{
+			font-size: 1.6rem;
+			margin-top: 0.2rem;
+			float: right;
+		} 
+		.main .top-nav .ul-first-nav .ul-second-nav{
+			display: none;
+		} 
+		.main .top-nav  .ul-first-nav .li-first-nav:hover .ul-second-nav{
+			display: block;
+		}
+		.main .top-nav  .ul-first-nav .li-first-nav .ul-second-nav a{
+			text-decoration: none;
+			font-size: 2rem;
+			color: #d8d8d8;
+		}
+		.main .top-nav  .ul-first-nav .li-first-nav .ul-second-nav li{
+		/*	position: absolute;*/
+		
+		/*	margin-left: 12%;
+			/*padding-top: 0.4rem;*/
+			text-align: right;
+		/*	background-color: red;*/
+		}
+		.main .list ul{
+			list-style: none;
+			/*font-size: 1rem;*/
+			margin: 0;
+			padding: 0;
+			border:0;
+			border-bottom: 1px solid #d8d8d8;
+		}
+		.main .list ul li{
+			height: 3rem;
+		}
+		.main .list .one-list,.four-list{
+			color: #d8d8d8;
+			font-size: 2rem;
+			/*margin-top: 1rem;*/
+		}
+		.main .list ul .one-list-sever{
+			display: inline-block;
+			height: 28px;
+			width: 30px;
+			/*border:1px solid #000 ;*/
+			margin:0.2rem 0.6rem;
+			background-image: url(photo/task6-0.png);
+			background-repeat: no-repeat;
+			background-position: -7px -56px;
+			vertical-align: middle;
+		}
+		.main .list ul .two-list{
+			color: #333333;
+			float: left;	
+			font-size: 1.7rem;
+			padding-left: 1.2rem;
+			vertical-align: middle;
+			line-height: 3rem;
+		}
+		.main .list ul .three-list{
+			color: red;
+			font-size: 2.1rem;
+			text-align: right;
+		}
+		.main .list ul .three-list a{
+			text-decoration: none;
+		}
+		.main .list ul .three-list  i{
+			font-size: 2rem;
+			padding: 0 0.2rem;
+			color:#7bcbd6;
+		}
+		.main .list ul .four-list-address{
+			display: inline-block;
+			height: 28px;
+			width: 30px;
+			/*border:1px solid #000 ;*/
+			margin:0 0.6rem;
+			background-image: url(photo/task6-0.png);
+			background-repeat: no-repeat;
+			background-position: -4px -7px;
+			vertical-align: middle;
+		}
+		.footer{
+			width: 100%;
+			height:7.2rem;
+			position: fixed;
+			bottom: 0;
+			background-color: #fff;
+			text-align: center;
+		}
+		
+		.footer .left-footer{
+			display: inline-block;
+			height: 7.2rem;
+			width: 40%;
+			line-height: 7.2rem;
+			border: 0;
+		/*	margin-top: 0.8rem;*/
+			/*outline: none;*/
+		}
+		.footer .mid-footer{
+			display: inline-block;
+			width: 16%;
+			height: 7.2rem;
+			vertical-align: middle;
+			margin-left: -0.6rem;
+			
+		}
+		.footer .right-footer{
+			display: inline-block;
+			vertical-align: middle;
+			height: 7.2rem;
+			width: 40%;
+			margin-top: 0.6rem;
+			margin-left: 0.2rem;
+		}
+		.footer button {
+			padding: 0;
+			background-color: #faf8fb;
+			border:0;
+		}
+	/*	.footer .left .left-button{
+			width:3.4rem;
+			height: 3.4rem;
+			vertical-align: top;
+			/*margin-top: 0.2rem;
+		}*/
+		.footer .right-fooer .right-button{
+			vertical-align: middle;
+			margin-bottom: 0.2rem;
+		}
+		.footer .write{
+			display: inline-block;
+			width: 6rem;
+			height:6rem;
+			/*margin-top: 0.2rem 0;*/
+			border: 0;
+		}
+		.footer img{
+			width: 100%;
+			max-width: 100%;
+		}
+		
+
+		.footer .right-footer .two{
+			height: 3.2rem;
+			width: 3.2rem;
+			padding-bottom: 0.2rem;
+			margin-left: 0.8rem;
+		}
+		.footer .right-footer span{
+			font-size:2rem;
+			padding-left: 0.6rem;
+			color: #c8c9ca;
+		}
+		.footer .left-footer span{
+			font-size: 2rem;
+			color: #5fc0cd;
+		}
+		/*.footer .left.one{
+			height: 2rem;
+			width:2rem;
+		}*/
+	</style>
+</head>	 	
+<body>
+	<div class="header">
+		<div class="button"><button type="button" value="找雇主" class="first-button">找雇主</button>
+		<button type="button" value="找护工" class="second-button">找护工</button>
+		<a href=""><img src="photo/task6-5.jpg"></a>
+		</div>
+	</div>	
+	<div class="main">
+		<div class="top-nav">
+			<ul class="ul-first-nav">
+				<li class="li-first-nav one-first-nav">所在地<i class="iconfont icon-xiangxiahuise"></i>
+						<ul class="ul-second-nav">
+							<li class="li-second-nav"><a href=""> 北京</a></li>
+						</ul>
+				</li>
+
+				<li class="li-first-nav">食宿<i class="iconfont icon-xiangxiahuise"></i>
+						<ul class="ul-second-nav">
+							<li class="li-second-nav"><a href=""> 包吃</a></li>
+						</ul>
+				</li>
+				<li class="li-first-nav">病人情况<i class="iconfont icon-xiangxiahuise"></i>
+						<ul class="ul-second-nav">
+							<li class="li-second-nav"><a href=""> 骨折</a></li>
+						</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="list">
+			<ul>
+				<li class="one-list"><i class="one-list-sever"></i>服务日期</li>
+				<li class="two-list">2015-7-5至2015-7-12</li>
+				<li class="three-list">25元/小时<a href=""><i class="iconfont icon-arrow-right"></i></a></li>
+				<li class="four-list"><i class="four-list-address" ></i>北京·通州·果园</li>
+			</ul>
+		</div>
+		<div class="list">
+			<ul>
+				<li class="one-list"><i class="one-list-sever"></i>服务日期</li>
+				<li class="two-list">2015-7-5至2015-7-12</li>
+				<li class="three-list">35元/小时<a href=""><i class="iconfont icon-arrow-right"></i></a></li>
+				<li class="four-list"><i class="four-list-address" ></i>北京·通州·果园</li>
+			</ul>
+		</div>
+		<div class="list">
+			<ul>
+				<li class="one-list"><i class="one-list-sever"></i>服务日期</li>
+				<li class="two-list">2015-7-5至2015-7-12</li>
+				<li class="three-list">45元/小时<a href=""><i class="iconfont icon-arrow-right"></i></a></li>
+				<li class="four-list"><i class="four-list-address" ></i>北京·通州·果园</li>
+			</ul>
+		</div>
+		<div class="list">
+			<ul>
+				<li class="one-list"><i class="one-list-sever"></i>服务日期</li>
+				<li class="two-list">2015-7-5至2015-7-12</li>
+				<li class="three-list">45元/小时<a href=""><i class="iconfont icon-arrow-right"></i></a></li>
+				<li class="four-list"><i class="four-list-address" ></i>北京·通州·果园</li>
+			</ul>
+		</div>
+		<div class="list">
+			<ul>
+				<li class="one-list"><i class="one-list-sever"></i>服务日期</li>
+				<li class="two-list">2015-7-5至2015-7-12</li>
+				<li class="three-list">45元/小时<a href=""><i class="iconfont icon-arrow-right"></i></a></li>
+				<li class="four-list"><i class="four-list-address" ></i>北京·通州·果园</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		<!-- <div class="left">
+			<button class="left-button">
+				<div class="one">
+				<img src="photo/task6-1.jpg">	
+				</div>
+				<span>首页</span>
+			</button>
+		</div> -->
+		<div  class="left-footer">
+			<button class="left-button">
+				<div class="one">
+				<img src="photo/task6-1.jpg">
+				</div>
+				<span>首页</span>
+			</button>
+		</div>
+		<div class="mid-footer">
+			<button class="write">	
+				<img src="photo/task6-6.jpg" >	
+			</button>
+		</div>
+		<div  class="right-footer">
+			<button class="right-button">
+				<div class="two">
+				<img src="photo/task6-7.jpg">
+				</div>
+				<span>我 的</span>
+			</button>
+		</div>
+	</div>
+</body>
+</html>
