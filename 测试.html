@@ -1,93 +1,178 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>下拉框</title>
-<style>
-* {
-margin: 0;
-padding: 0;
-}
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
 
-body {
-padding: 50px 50px;
-}
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-.btn-select {
-position: relative;
-display: inline-block;
-width: 150px;
-height: 25px;
-background-color: #f80;
-font: 14px/20px "Microsoft YaHei";
-color: #fff;
-}
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      body{
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+    </style>
+  </head>
+  <body>
+   <h3>面板中嵌套列表组（一）</h3>
+<div class="panel panel-default">
+    <div class="panel-heading">图解CSS3</div>
+  <div class="panel-body">
+    <p>详细讲解了选择器、边框、背景、文本、颜色、盒模型、伸缩布局盒模型、多列布局、渐变、过渡、动画、媒体、响应Web设计、Web字体等主题下涵盖的所有CSS3新特性
+    </p>
+    <ul class="list-group">
+      <li class="list-group-item">我是列表项</li>
+      <li class="list-group-item">我是列表项</li>
+      <li class="list-group-item">我是列表项</li>
+    </ul>
+  </div>
+  <div class="panel-footer">作者：大漠</div>
+</div>
 
-.btn-select .cur-select {
-position: absolute;
-display: block;
-width: 150px;
-height: 25px;
-line-height: 25px;
-background: #f80 url(ico-arrow.png) no-repeat 125px center;
-text-indent: 10px;
-}
+<h3>面板中嵌套列表组（二）</h3>
+<div class="panel panel-default">
+  <div class="panel-heading">图解CSS3</div>
+  <div class="panel-body">
+    <p>详细讲解了选择器、边框、背景、文本、颜色、盒模型、伸缩布局盒模型、多列布局、渐变、过渡、动画、媒体、响应Web设计、Web字体等主题下涵盖的所有CSS3新特性
+    </p>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item">我是列表项</li>
+    <li class="list-group-item">我是列表项</li>
+    <li class="list-group-item">我是列表项</li>
+  </ul>
+  <div class="panel-footer">作者：大漠</div>
+</div>
 
-.btn-select:hover .cur-select {
-background-color: #f90;
-}
 
-.btn-select select {
-position: absolute;
-top: 0;
-left: 0;
-width: 150px;
-height: 25px;
-opacity: 0;
-filter: alpha(opacity: 0;);
-font: 14px/20px "Microsoft YaHei";
-color: #f80;
-}
 
-.btn-select select option {
-text-indent: 10px;
-}
 
-.btn-select select option:hover {
-background-color: #f80;
-color: #fff;
-}
-</style>
-</head>
 
-<body>
-<form>
-<a class="btn-select" id="btn_select">
-<span class="cur-select">请选择</span>
-<select>
-<option>选项一</option>
-<option>选项二</option>
-<option>选项三</option>
-<option>选项四</option>
-<option>选项五</option>
-</select>
-</a>
-</form>
 
-<script>
-var $$ = function (id) {
-return document.getElementById(id);
-}
-window.onload = function () {
-var btnSelect = $$("btn_select");
-var curSelect = btnSelect.getElementsByTagName("span")[0];
-var oSelect = btnSelect.getElementsByTagName("select")[0];
-var aOption = btnSelect.getElementsByTagName("option");
-oSelect.onchange = function () {
-var text=oSelect.options[oSelect.selectedIndex].text;
-curSelect.innerHTML = text;
-}
-}
-</script>
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
 </html>
