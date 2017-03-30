@@ -17,47 +17,126 @@
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-      body{
-        padding-top: 70px;
-        padding-bottom: 70px;
-      }
+    /*  .message-box {
+    position:relative;
+    width:240px;
+    height:60px;
+    line-height:60px;
+    background:#E9FBE4;
+    box-shadow:1px 2px 3px #E9FBE4;
+    border:1px solid #C9E9C0;
+    border-radius:4px;
+    text-align:center;
+    color:#0C7823;
+}
+.triangle-border {
+    position:absolute;
+    left:30px;
+    overflow:hidden;
+    width:0;
+    height:0;
+    border-width:10px;
+    border-style:solid dashed dashed dashed;
+}
+.tb-border {
+    bottom:-20px;
+    border-color:#C9E9C0 transparent transparent transparent;
+}
+.tb-background {
+    bottom:-19px;
+    border-color:#E9FBE4 transparent transparent transparent;
+}
+.one{
+  height: 300px;
+  width: 300px;
+  background-color: #d8d8d8;
+  position: relative;
+}
+
+   .q2{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: absolute;
+   } 
+   .q1{
+   width: 100px;
+   height:100px;
+   background-color: red;
+   position: absolute;
+   }
+   .message-box {
+    position:relative;
+    width:240px;
+    height:60px;
+    line-height:60px;
+    background:#E9FBE4;
+    box-shadow:1px 2px 3px #E9FBE4;
+    border:1px solid #C9E9C0;
+    border-radius:4px;
+    text-align:center;
+    color:#0C7823;
+}
+.triangle-character {
+    position:absolute;
+    left:30px;
+    overflow:hidden;
+    width:26px;
+    height:26px;
+    font:normal 26px "宋体"; // 字符的大小和字体也有关系哦！
+}
+.tc-border {
+    bottom:-13px;
+    color:#C9E9C0;
+}
+.tc-background {
+    bottom:-12px;
+    color:#E9FBE4;
+}
+*/
+
+.message-box {
+    position:relative;
+    width:240px;
+    height:60px;
+    line-height:60px;
+    background:#E9FBE4;
+    box-shadow:1px 2px 3px #E9FBE4;
+    border:1px solid #C9E9C0;
+    border-radius:4px;
+    text-align:center;
+    color:#0C7823;
+}
+.triangle-css3 {
+    position:absolute;
+    
+    bottom:-6.5px;
+    left:30px;
+    overflow:hidden;
+    width:13px;
+    height:13px;
+    background:#E9FBE4;
+    border-bottom:1px solid #C9E9C0;
+    border-right:1px solid #C9E9C0;
+}
+.transform {
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
     </style>
+
   </head>
   <body>
-   <h3>面板中嵌套列表组（一）</h3>
-<div class="panel panel-default">
-    <div class="panel-heading">图解CSS3</div>
-  <div class="panel-body">
-    <p>详细讲解了选择器、边框、背景、文本、颜色、盒模型、伸缩布局盒模型、多列布局、渐变、过渡、动画、媒体、响应Web设计、Web字体等主题下涵盖的所有CSS3新特性
-    </p>
-    <ul class="list-group">
-      <li class="list-group-item">我是列表项</li>
-      <li class="list-group-item">我是列表项</li>
-      <li class="list-group-item">我是列表项</li>
-    </ul>
-  </div>
-  <div class="panel-footer">作者：大漠</div>
+
+
+
+
+<div class="message-box">
+  <span>我是利用 css transfrom 属性字符实现的</span>
+  <div class="triangle-css3 transform ie-transform-filter"></div>
 </div>
-
-<h3>面板中嵌套列表组（二）</h3>
-<div class="panel panel-default">
-  <div class="panel-heading">图解CSS3</div>
-  <div class="panel-body">
-    <p>详细讲解了选择器、边框、背景、文本、颜色、盒模型、伸缩布局盒模型、多列布局、渐变、过渡、动画、媒体、响应Web设计、Web字体等主题下涵盖的所有CSS3新特性
-    </p>
-  </div>
-  <ul class="list-group">
-    <li class="list-group-item">我是列表项</li>
-    <li class="list-group-item">我是列表项</li>
-    <li class="list-group-item">我是列表项</li>
-  </ul>
-  <div class="panel-footer">作者：大漠</div>
-</div>
-
-
-
-
-
 
 
 
@@ -172,7 +251,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
