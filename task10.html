@@ -12,13 +12,27 @@
 			.header .top-header .container .row .col-xs-2 .btn{
 				padding: 6px 25px;
 			}
+			.header .bottom-header .container .navbar .collapse  ul li {
+		 	vertical-align: middle;
+		 	margin-top: 18px;
+		 	padding: 0 20px;
+		 	}
+		 	.header .bottom-header .container .navbar .collapse  ul li a{
+		 		padding:12px;
+		 		box-shadow: 0 0 1px #888;
+		 	}
 		}
-		 html{-webkit-text-size-adjust:none;}
+		@media screen and (max-width: 767px){
+			 .header .bottom-header .container .navbar-collapse{
+				height: 170px;
+			 }
+		}
+		html{-webkit-text-size-adjust:none;}
+		
 		
 		.header .top-header{
 			background-color: #1d7ad9;
 			color:#fff;
-
 		}
 		.header .top-header .container .row .col-xs-8{
 			line-height: 34px;
@@ -59,6 +73,10 @@
 			position: relative;
 			top:8px;
 		}
+		.header .bottom-header .container .navbar-header .navbar-toggle{
+			margin-right: 0;
+			margin-top: 20px;
+		}
 		.header .bottom-header .container .navbar-header .navbar-brand h1{
 			margin: 0;
 			font-size: 42px;
@@ -72,11 +90,7 @@
 			line-height: 80px;
 		
 		}
-		 .header .bottom-header .container .navbar .collapse  ul li {
-		 	vertical-align: middle;
-		 	margin-top: 18px;
-		 	padding: 0 20px;
-		 }
+		
 		  .header .bottom-header .container .navbar .collapse  ul .fourth-list{
 		  	padding-right: 0;
 		  }
@@ -86,9 +100,7 @@
 		   }
 		  .header .bottom-header .container .navbar .collapse  ul li a{
 		  	background-color: #fff;
-		  	padding: 12px;
-		  	border-radius: 4px;
-		  	box-shadow: 0 0 1px #888;
+		  	border-radius: 4px;	
 		  	color: #000;
 		  }
 		  .header .bottom-header .container .navbar .collapse  ul li a:hover{
