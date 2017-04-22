@@ -21,15 +21,81 @@
 		 		padding:12px;
 		 		box-shadow: 0 0 1px #888;
 		 	}
+		 	.main .container .fourth-row form .form-group-2{
+				position: absolute;
+				right: 0;
+				top:0;
+			}
+			.main .container .sixth-row form .form-group-2 select{
+				position: relative;
+				top:30px;
+			}
+			.main .container .eighth-row form .form-group-2 select{
+				position: relative;
+				top:-20px;
+			}
+			.main .container .sixth-row .box-message{
+				display: inline-block;
+			}
+			.footer .top-footer .container .row .left-message{
+				margin-top: 20px;
+			}
+			.footer .top-footer .container .row .middle-message{
+				margin-top: 20px;
+			}
+		/*	.footer .top-footer .container .row .right-message .text-left{
+				margin-top: 20px;
+			}
+*/
+
 		}
 		@media screen and (max-width: 767px){
 			 .header .bottom-header .container .navbar-collapse{
 				height: 170px;
 			 }
+			 .main .container .row .step-container p{
+		 		font-size: 12px;
+		 }
+		 	.main .container .fourth-row form .form-group-2{
+				float: left;
+			}
+			.main .container .sixth-row .box-message label{
+				margin-left: 0!important;
+			}
+			.main .container .eighth-row form {
+				height: 250px;
+			}
+			.main .container .eighth-row form .form-group-2 select{
+				position: relative;
+				top:-30px;
+			}
 		}
-		html{-webkit-text-size-adjust:none;}
+		@media screen and (max-width: 425px){
+			 .main .container .row .step-container .step1 {
+			 	width: 50%;
+			 	
+			 }
+			 .main .container .row .step-container .step2{
+			 	width: 50%;
+			 }
+			 .main .container .second-row{
+		   		font-size: 18px!important;
+		   }
+		     .main .container .second-row .span-icon{
+		   	
+		  	height: 18px!important;
 		
-		
+		   	margin-bottom:2px!important;
+		   }
+		   .main .container .sixth-row .box-message label{
+				margin-left: 0!important;
+				width: 60%;
+			}
+			.main .container .ninth-row{
+				height: 80px!important;
+				line-height: 50px!important;
+			}		
+		}
 		.header .top-header{
 			background-color: #1d7ad9;
 			color:#fff;
@@ -107,6 +173,298 @@
 		  	background-color:  #1d7ad9;
 		   	color:#fff;
 		  }
+
+
+
+
+		.main .container{
+			margin-bottom: 40px;
+		}
+		 .main .container .row .step-container{
+		 	width: 100%;
+		 }
+			
+		  .main .container .row .step1,.step2{
+		  	width: 25%;
+		  	display: inline-block;
+		  }
+		   .main .container .row .step1,.step2 span{
+		  	display: inline-block;
+		  }
+		   .main .container .row .step1 .left-mark{
+		   	display: inline-block;
+			width: 45%;
+			height: 4px;
+			background-color:#ff7f02;
+			line-height: 16px;
+			vertical-align: middle;
+		   } 
+		   .main .container .row .step1 .right-mark{
+		   	display: inline-block;
+			width: 45%;
+			height: 4px;
+			background-color:#ff7f02;
+			line-height: 16px;
+			vertical-align: middle;
+		   }
+		    .main .container .row .step2 .left-mark,.right-mark{
+			width: 45%;
+			height: 4px;
+			background-color:#cccccc;
+			line-height: 16px;
+			vertical-align: middle;
+		   }
+		   .main .container .row .step1 .num{
+		   	color:#fff;
+		   	display: inline-block;
+		   	width: 10%;
+		   	text-align: center;
+			background-color:#ff7f02;
+			border-radius: 50%;
+		   }
+		   .main .container .row .step2 .num{
+		   	color:#cccccc;
+		   	display: inline-block;
+		   	width: 10%;
+		   	text-align: center;
+			background-color:#cccccc;
+			border-radius: 50%;
+			color:#fff;
+		   }
+		   .main .container .row .step1 p{
+		   	text-align: center;
+		   	color: #ff7f02;
+		   	margin-top: 10px;
+		   	font-size: 16px;
+		   }
+		   .main .container .row .step2 p{
+		   	text-align: center;
+		   	color: #cccccc;
+		   	margin-top: 10px;
+		   	font-size: 16px;
+		   }
+		   .main .container .second-row{
+		   	margin-top: 20px;
+		   	font-size: 20px;
+			line-height: 20px;
+		   }
+		   .main .container .second-row .span-icon{
+		   	display: inline-block;
+		   	width: 4px;
+		  	vertical-align: middle;
+		  	height: 20px;
+		   	background-color:#1d7ad9;
+		   	margin-bottom: 1px;
+		   	margin-right: 2px;
+		   }
+		   .main .container .third-row,.fifth-row {
+		   	height: 45px;
+		   	background-color: #f3f3f3;
+		   	line-height: 45px;
+		   }
+		   .main .container .third-row .span-icon-1{
+		   	display: inline-block;
+		   	width: 24px;
+		   	height: 20px;
+		   	background-image: url(photo/task10.png);
+		   	background-repeat: no-repeat;
+		   	background-position: 0 0;
+		   	vertical-align: middle;
+		   }
+		   .main .container .fifth-row .span-icon-2{
+		   	display: inline-block;
+		   	width: 26px;
+		   	height: 26px;
+		   	background-image: url(photo/task10.png);
+		   	background-repeat: no-repeat;
+
+		   	background-position: 0 -36px;
+		   	vertical-align: middle;
+		   }
+		   .main .container .third-row,.fifth-row .span-text{
+		   	font-size: 18px;
+		   	color:  #1d7ad9;
+		   	vertical-align: middle;
+		   }
+		  	.main .container .fourth-row {
+		  		background-color: #fbfcff;
+		  		}
+			.main .container .fourth-row form{
+				position: relative;
+			}
+			.main .container .fourth-row form .form-group-1{
+				margin-top:25px;
+				margin-bottom: 25px;
+			}
+			.main .container .fourth-row form .radio-1{
+				position: relative;
+				display: inline-block;
+				padding-left: 30px;
+				color: #888;
+				font-size: 18px;
+				cursor: pointer;
+			}
+			.main .container .fourth-row form .form-group .radio-inline{
+				padding: 0;
+			}
+			.main .container .fourth-row form .radio-1 input{
+				position: absolute;
+				top: 10px;
+				opacity: 0;
+			}
+			.main .container .fourth-row form .radio-1 i{
+				position: absolute;
+				left: 8px;
+				top: 50%;
+				display: block;
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				border: 1px solid #888;
+				transform: translateY(-50%);
+				outline: 0;
+				
+			}
+			.main .container .fourth-row form .radio-1 input+i:after{
+				position: absolute;
+				top:50%;
+				left: 50%;
+				transform: translate(-50% ,-50%);
+				content: "";
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background-color: #fff;
+				opacity: 0;
+				transition: opacity .1s;  
+   				-webkit-transition: opacity .1s;  
+			}
+			.main .container .fourth-row form .radio-1 input:checked+i{
+				background-color: #1d7ad9;
+			}
+			.main .container .fourth-row form .radio-1 input:checked+i:after{
+				opacity: 1;
+			}
+			.main .container .fourth-row form .form-group-2 select {
+				color:#888;
+				font-size: 14px;
+				appearance:none;
+				 -moz-appearance:none;
+ 				 -webkit-appearance:none;
+ 				 padding-right: 40px;
+				background-image: url(photo/task10-2.png);
+				background-repeat: no-repeat;
+				background-position: 96% center;
+				height: 36px;
+				}
+			.main .container .sixth-row{
+				position: relative;
+			}
+		    .main .container .sixth-row form .radio-1 {
+				font-weight: normal;
+			}
+			.main .container .sixth-row form  .length,.height,.width{
+				margin-left: 30px;
+			}
+			.main .container .sixth-row form  .length input{
+				width: 70px;
+			}
+			.main .container .sixth-row form  .width input{
+				width: 70px;
+			}
+			.main .container .sixth-row form  .height input{
+				width: 70px;
+			}
+
+			.main .container .sixth-row form .width span{
+				color:#888;
+				padding: 0 5px;
+			}
+			.main .container .sixth-row form .height span{
+				color:#888;
+				padding: 0 5px;
+			}
+			.main .container .sixth-row form .length span{
+				color:#888;
+				padding: 0 5px;
+			}
+			.main .container .seventh-row .span-icon-2 {
+					display: inline-block;
+				   	width: 22px;
+				   	height: 24px;
+				   	background-image: url(photo/task10.png);
+				   	background-repeat: no-repeat;
+				   	background-position: 0 -78px;
+				   	vertical-align: middle;
+			}
+			
+			.main .container .eighth-row .col-md-12 .form-group{
+				margin-top: 25px;
+				margin-bottom: 25px;
+			}
+			.main .container .eighth-row .col-md-12 .form-group:after{
+				content: "";
+				height: 0;
+				display: block;
+				clear: both;
+				visibility: hidden;
+			}
+			.main .container .eighth-row .col-md-12 .form-group label{
+			margin-top: 10px;
+			}
+			.main .container .eighth-row .col-md-12 .form-group .col-md-2{
+				padding: 0;
+			}
+			.main .container .eighth-row .col-md-12{
+				border-bottom: 1px solid #f3f3f3;
+			}
+			.main .container .ninth-row{
+				height: 200px;
+				line-height: 200px;
+				border-bottom: 1px solid #f3f3f3;
+			}			
+			.main .container .ninth-row .btn{
+				width: 120px;
+			}
+
+
+
+			.footer .top-footer{
+		
+				background-color: #f9f9f9;
+			}
+			.footer .top-footer .container .row{
+				margin: 30px 0;
+				color: #888;
+				font-size: 16px;
+			}
+			.footer .top-footer .container .row .col-md-4{
+				margin-top: 20px;
+			}
+			.footer .top-footer .container .row .middle-message a{
+				padding-right: 15px;
+				text-decoration: none;
+				color:#888;
+				font-size: 16px;
+			}	
+			.footer .top-footer .container .row .middle-message a.active{
+				color:#1d7ad9;
+			}	
+			.footer .top-footer .container .row .middle-message a:hover{
+				color:#1d7ad9;
+			}
+			.footer .top-footer .container .row .right-message div{
+				display: inline-block;
+				vertical-align: top;
+			}
+			.footer .bottom-footer {
+				background-color: #1d7ad9;
+				color: #fff;
+				font-size: 10px;
+			}
+			.footer .bottom-footer .row div{
+				display: inline-block;
+			}
  	</style>
 </head>
 <body>
@@ -149,7 +507,6 @@
 						      		<li><a href="##">在线定制</a></li>
 						      		<li><a href="##">标准箱</a></li>
 						      		<li class="fourth-list"><a href="##">品质保证</a></li>
-						      		
 							 	</ul>
 						  </div>
 						</div>
@@ -158,10 +515,209 @@
 			</div>
 		</div>
 	</div>
-	
+
+
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6"></div>
+				<div class="col-md-6 col-xs-12 col-sm-12">
+					<div class="step-container">
+						<div class="step1 ">
+							<span class="left-mark">
+							</span><span class="num">1
+							</span><span class="right-mark"></span>
+							<p><strong> 1、定制纸箱</strong></p>
+						</div><!-- 
+					 --><div class="step2">
+							<span class="left-mark">
+							</span><span class="num">2
+							</span><span class="right-mark" ></span>
+							<p><strong> 2、选择数量</strong></p>
+						</div><!-- 
+					 --><div class="step2">
+							<span class="left-mark">
+							</span><span class="num">3
+							</span><span class="right-mark" ></span>
+							<p><strong> 3、上传附件</strong></p>
+						</div><!-- 
+					 --><div class="step2">
+							<span class="left-mark">
+							</span><span class="num">4
+							</span><span class="right-mark" ></span>
+							<p><strong> 4、选择下单</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row second-row">
+				<div class="col-md-12 col-sm-12">
+					<span class="span-icon"></span><span>请您按照以下步骤来定制您的纸箱</span>
+				</div>
+			</div>
+			<div class="row third-row">
+				<div class="col-md-12 col-sm-12">
+					<span class="span-icon-1"></span><span class="span-text">选择箱型</span>
+				</div>
+			</div>
+			<div class="row fourth-row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<form role="form" class="">
+						 <div class="form-group form-group-1">
+					    <label class="radio-inline">
+					     <div class="radio-1"><input type="radio"  value="option1" name="sex" checked><i></i>对口箱</div>
+					    </label>
+					    <label class="radio-inline">
+					       <div class="radio-1"><input type="radio"  value="option2" name="sex"><i></i>飞机盒</div>
+					    </label>
+					    <label class="radio-inline">
+					       <div class="radio-1"><input type="radio"  value="option3" name="sex"><i></i>天地盖</div>
+					    </label>
+					  </div> 
+						<div class="form-group form-group-2">
+							<select class="form-control ">
+								<option>查看详情</option>
+								<option>查看详情</option>
+								<option>查看详情</option>
+								<option>查看详情</option>
+							</select>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row fifth-row">
+				<div class="col-md-12 col-sm-12">
+					<span class="span-icon-2"></span><span class="span-text">确定尺寸</span>
+				</div>
+			</div>
+			<div class="row sixth-row fourth-row">
+				<div class="col-md-12 col-sm-12">
+					<form action="" class="">
+						<div class="form-group form-group-1">
+							<label class="">
+						     <div class="radio-1"><input type="radio"  value="option1" name="round" checked><i></i>外径</div>
+						    </label>
+						    <div class="box-message">
+						    <label class="length">
+						    	<span>长</span><input type="text" name="" value="" placeholder=""><span>mm</span>
+						    </label>
+						    <label class="width">
+						    	<span>宽</span><input type="text" name="" value="" placeholder=""><span>mm</span>
+						    </label>
+						    <label class="height">
+						    	<span>高</span><input type="text" name="" value="" placeholder=""><span>mm</span>
+						    </label>
+						    </div>
+						</div>
+						<div class="form-group form-group-1">
+							<label class="">
+						     <div class="radio-1"><input type="radio"  value="option1" name="round" ><i></i>内径</div>
+						    </label>
+						    <div class="box-message">
+							    <label class="length">
+							    	<span>长</span><input type="text" name="" value="" placeholder=""><span>mm</span>
+							    </label>
+							    <label class="width">
+							    	<span>宽</span><input type="text" name="" value="" placeholder=""><span>mm</span>
+							    </label>
+							    <label class="height">
+							    	<span>高</span><input type="text" name="" value="" placeholder=""><span>mm</span>
+							    </label>
+						    </div>
+						</div>
+						<div class="form-group form-group-2">
+							<select class="form-control ">
+								<option>查看详情</option>
+								<option>查看详情</option>
+								<option>查看详情</option>
+								<option>查看详情</option>
+							</select>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row fifth-row seventh-row">
+				<div class="col-md-12 col-sm-12">
+					<span class="span-icon-2"></span><span class="span-text">选择材质</span>
+				</div>
+			</div>
+			<div class="row eighth-row fourth-row">
+				<div class="col-md-12 col-sm-12">
+					<form>
+						<div class="form-group form-group-1">
+						<div class="col-md-2 ">
+					    <label class="radio-inline">
+					     <div class="radio-1"><input type="radio"  value="option1" name="sex" checked><i></i>三层A瓦优质</div>
+					    </label>
+					    </div>
+					    <div class="col-md-2 ">
+					    <label class="radio-inline">
+					     <div class="radio-1"><input type="radio"  value="option1" name="sex" checked><i></i>三层A瓦优质</div>
+					    </label>
+					    </div>
+					    <div class="col-md-2 ">
+					    <label class="radio-inline">
+					     <div class="radio-1"><input type="radio"  value="option1" name="sex" checked><i></i>三层A瓦优质</div>
+					    </label>
+					    </div>
+					    <div class="col-md-2 ">
+					    <label class="radio-inline">
+					     <div class="radio-1"><input type="radio"  value="option1" name="sex" checked><i></i>三层A瓦优质</div>
+					    </label>
+					    </div>
+					    <div class="col-md-2 ">
+					    <label class="radio-inline">
+					     <div class="radio-1"><input type="radio"  value="option1" name="sex" checked><i></i>三层A瓦优质</div>
+					    </label>
+					    </div>
+					  </div>
+					  <div class="form-group form-group-2">
+							<select class="form-control ">
+								<option>查看详情</option>
+								<option>查看详情</option>
+								<option>查看详情</option>
+								<option>查看详情</option>
+							</select>
+						</div> 
+					</form>
+				</div>
+			</div>
+			<div class="row ninth-row text-center">
+				<button type="button" class="btn btn-danger ">下一步</button>
+			</div>
+		</div>
 	</div>
-	<div class="main"></div>
-	<div class="footer"></div>
+	<div class="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 left-message">51包装网——纸箱包装首选平台</div>
+					<div class="col-md-4 col-sm-4 middle-message">
+					<p><a href="" class="active">关于我们</a><a href="">配送流程</a><a href="">联系我们</a> </p> 
+					<p><a href="">下单指南</a><a href="">媒体介绍</a> </p> 
+					</div>
+					<div class="col-md-4 col-sm-4  right-message">
+						<div class="text-left">
+							<p>TEL:400-0000-0000</p>
+							<p>企业QQ：123456789</p>
+							<p>微信号：XXXXXXX</p>
+						</div>
+						<div><img src="photo/task10-4.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-footer">
+			<div class="container">
+				<div class="row text-center">
+					北京五一包装科技有限公司Copyright &copy;2015
+					<div >51baozhuang.com015</div>
+					<div >All rights reseved</div>
+					<div >京icp备99999999-1</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -200,8 +756,7 @@
 
 
 
-
-
+	
 			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
