@@ -1,0 +1,124 @@
+$text-color:(
+        one:#fff,
+        two:#5fc0cd
+);
+$bg-color:(
+        body:#EEF0F4,
+        header:#6CCDD5,
+        form:#fff
+);
+%a{
+  color:map-get($text-color,one);
+  text-decoration:none;
+}
+%header{
+  position:absolute;
+  text-align:center;
+  line-height:5rem;
+}
+%border-style{
+  border-top-width:0;
+  border-bottom-width:0;
+  border-right-width:0;
+}
+body{
+  margin:0;
+  padding:0;
+  background-color: map-get($bg-color,body);
+}
+.header{
+  background-color:map-get($bg-color,header);
+  height: 5rem;
+  position: relative;
+  .left-header{
+    @extend %header;
+    width: 30%;
+    font-size: 20px;
+    a{
+      @extend %a;
+      margin-left: 5%;
+    }
+  }
+  .middle-header{
+    @extend %header;
+    left: 30%;
+    width: 40%;
+    font-size: 22px;
+    color: map-get($text-color,one);
+  }
+  .right-header{
+    @extend %header;
+    left: 70%;
+    width: 30%;
+    font-size:20px;
+    a{
+      @extend %a;
+      margin-right: 5%;
+    }
+  }
+}
+form p{
+  background-color: map-get($bg-color,form);
+  img{
+    max-width: 100%;
+    position: relative;
+    top:-0.25rem;
+    vertical-align: middle;
+    margin: 0 1.8rem;
+  }
+  .phone-number,.password{
+    margin: 1.5rem 0;
+    height:3rem ;
+    width: 60%;
+    position: relative;
+    font-size: 20px;
+    padding-left: 2rem;
+    outline: none;
+    @extend %border-style;
+  }
+
+}
+form .bgc-button{
+  background-color: map-get($bg-color,header);
+  text-align: center;
+  .button{
+    height: 5rem;
+    font-size: 2.2rem;
+    color: map-get($text-color,one);
+    width: 100%;
+    background-color: map-get($bg-color,header);
+    border: none;
+  }
+}
+.footer a{
+  font-size: 20px;
+  @extend %a;
+  color:map-get($bg-color,header);
+  float: right;
+  margin-right: 2%;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  html{
+    font-size: 62.5%;
+  }
+}@media only screen and (min-width: 481px) and (max-width:767px) {
+  html{
+    font-size: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html{
+    font-size: 100%;
+    background: #ffffff;
+  }
+  body{
+    width:768px;
+    margin: 0 auto;
+    overflow: hidden;
+    //border: 1px solid #000;
+  }
+}
+
+
+
+

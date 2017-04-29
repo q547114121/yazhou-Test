@@ -1,0 +1,61 @@
+/*
+Error: Invalid CSS after "	two:": expected expression (e.g. 1px, bold), was ":#5fc0cd"
+        on line 3 of D:\用户目录\Documents\GitHub\yazhou-Test\task4.scss
+
+1: $text-color:(
+2: 	one:#fff,
+3: 	two::#5fc0cd
+4: 	);
+5: $bg-color:(
+6: 	body:#EEF0F4,
+7: 	header:#6CCDD5,
+8: 	form:#fff
+
+Backtrace:
+D:\用户目录\Documents\GitHub\yazhou-Test\task4.scss:3
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/lexer.rb:220:in `expected!'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:573:in `assert_expr'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:288:in `map_pair'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:278:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:513:in `paren'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:498:in `special_fun'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:492:in `raw'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:406:in `funcall'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:387:in `ident'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:246:in `unary_not'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:246:in `unary_div'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:246:in `unary_minus'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:246:in `unary_plus'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:227:in `times_div_or_mod'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:227:in `plus_or_minus'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:227:in `relational'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:227:in `eq_or_neq'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:227:in `and_expr'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:227:in `or_expr'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:361:in `space'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:345:in `interpolation'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:293:in `expr'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:571:in `assert_expr'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:62:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1027:in `sass_script'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:607:in `variable'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:650:in `block_contents'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files/Koala/bin/sass:18:in `load'
+C:/Program Files/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"	two:\": expected expression (e.g. 1px, bold), was \":#5fc0cd\"\A         on line 3 of D:\用户目录\Documents\GitHub\yazhou-Test\task4.scss\A \A 1: $text-color:(\A 2: 	one:#fff,\A 3: 	two::#5fc0cd\A 4: 	);\A 5: $bg-color:(\A 6: 	body:#EEF0F4,\A 7: 	header:#6CCDD5,\A 8: 	form:#fff"; }
