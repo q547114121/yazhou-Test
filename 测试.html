@@ -4,94 +4,45 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <style type="text/css">
-  
- .radio input[type="radio"]{
-        opacity: 0;
-      }
-      .radio .label-1{
-        padding-left: 22px;
-        background-image: url(photo/task10-5.png);
-        background-repeat: no-repeat;
-        background-position: left -94px;
-      }
-      .check{
-        background-position: left 0;
-      }
-
-      .choice{  
-    position: relative;  
-}  
-.choice .radio{  
-    position: relative;  
-    display: inline-block;  
-    font-weight: 400;  
-    color: #0c4757;  
-    padding-left: 25px;  
-    cursor: pointer;  
-}  
-.choice .radio input{  
-    position: absolute;  
-    left: -9999px;  
-}  
-.choice .radio i{  
-    display: block;  
-    position: absolute;  
-    top: 6px;  
-    left: 0;  
-    width: 15px;  
-    height: 15px;  
-    outline: 0;  
-    border: 1px solid #47a8c0;  
-    /*background: #9cd9e8;  */
-    border-radius: 50%;  
-    transition: border-color .3s  
-    -webkit-transition: border-color .3s;  
-}  
-.choice .radio input:checked+i{  
-    border-color: red;  
-    background-color: green;
-}  
-.choice .radio input+i:after{  
-    position: absolute;  
-    content: '';  
-    top: 3px;  
-    left: 3px;  
-    width: 9px;  
-    height: 9px;  
-    border-radius: 50%;  
-    background-color: #47a8c0;  
-    opacity: 0;  
-    transition: opacity .1s;  
-    -webkit-transition: opacity .1s;  
-}  
-.choice .radio input:checked+i:after{  
-    opacity: 1;  
-}  
-
- </style>
+    body{
+      margin: 0;
+    }
+    div{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    i{
+      float: left;
+      position: relative;
+      width: 33%;
+      padding: 16.5% 0;
+      
+    }
+    i:before{
+      content: "";
+      position: absolute;
+      top: 1%;
+      bottom: 1%;
+      left: 1%;
+      right: 1%;
+      background-color: red;
+    }
+  </style>
 </head>
 <body>
-    <div class="radio">
-              
-                <input type="radio" name="1" value="" placeholder=""><label class="label-1">天地盖  </label>
-
-                 <input type="radio" name="1" value="" placeholder=""><label class="label-1">天地盖  </label>
-            
-            </div>
-<div class="choice">  
-    <label class="radio">在校生<input type="radio" name="radio" value="1" checked><i></i></label>  
-    <label class="radio">非在校生<input type="radio" value="2" name="radio"><i></i></label>  
-</div>    
-    <script type="text/javascript">
-      var label =document.getElementByTagName("label");
-      for(i in label){
-        label[i].onclick=function(e){
-           for(j in label){
-               label[j].className="";
-         }
-        this.className="check";
-      }
-    }
-    </script>
-    </body>
+  <div>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+</body>
 </html>

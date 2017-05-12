@@ -1,0 +1,191 @@
+html {
+  font-size: calc(100vw/37.5);
+  -webkit-text-size-adjust: none; }
+
+.main .list ul {
+  margin: 0;
+  padding: 0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  width: 100%;
+  background-color: #5fc0cd;
+  height: 4.5rem;
+  position: fixed;
+  top: 0; }
+  .header .button {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 4.5rem; }
+    .header .button .first-button, .header .button .second-button {
+      vertical-align: middle;
+      margin-right: -0.3rem;
+      padding: 0;
+      border: 0;
+      height: 3.5rem;
+      width: 7.2rem;
+      font-size: 17px;
+      color: #fff;
+      border-radius: 0.4rem;
+      background-color: #55a8b3; }
+    .header .button .second-button {
+      font-size: 17px;
+      color: #5fc0cd;
+      background-color: #fff;
+      position: relative;
+      right: 5px; }
+    .header .button a {
+      display: inline-block;
+      position: absolute;
+      right: 1rem;
+      top: 0.8rem; }
+      .header .button a img {
+        width: 22px;
+        height: 22px;
+        max-width: 100%; }
+
+.main {
+  padding-top: 4.5rem;
+  padding-bottom: 5rem; }
+  .main .top-nav {
+    width: 100%;
+    height: 4rem;
+    border: 1px solid #d8d8d8;
+    vertical-align: middle; }
+    .main .top-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 4rem; }
+    .main .top-nav .ul-first-nav .li-first-nav {
+      float: left;
+      height: 4rem;
+      width: 32.9%;
+      text-align: center;
+      font-size: 14px;
+      color: #d8d8d8;
+      border: 0;
+      line-height: 4rem; }
+      .main .top-nav .ul-first-nav .li-first-nav i {
+        font-size: 16px;
+        margin-top: 2px;
+        float: right; }
+        .main .top-nav .ul-first-nav .li-first-nav i:after {
+          content: "";
+          display: inline-block;
+          width: 1px;
+          height: 2.5rem;
+          background-color: #e2e6e7;
+          position: relative;
+          top: 8px;
+          left: 10px;
+          z-index: -1; }
+  .main .list ul {
+    list-style: none;
+    border: 0;
+    border-bottom: 1px solid #d8d8d8;
+    height: 7.5rem; }
+    .main .list ul li {
+      height: 2.5rem;
+      line-height: 2.5rem; }
+    .main .list ul .one-list, .main .list ul .four-list {
+      font-size: 14px;
+      color: #d8d8d8;
+      vertical-align: middle; }
+    .main .list ul .one-list-sever {
+      display: inline-block;
+      margin-left: 1.5rem;
+      background-image: url(../photo/task6-8.png);
+      display: inline-block;
+      width: 18px;
+      height: 14px;
+      background-repeat: no-repeat;
+      background-position: 0 0px;
+      vertical-align: middle;
+      line-height: 2.5rem;
+      background-size: 70%; }
+    .main .list ul .two-list {
+      float: left;
+      font-size: 14px;
+      color: #333333;
+      vertical-align: middle;
+      line-height: 2.5rem;
+      margin-left: 3.3rem; }
+    .main .list ul .three-list {
+      text-align: right;
+      font-size: 15px;
+      color: red;
+      padding-right: 1.5rem; }
+      .main .list ul .three-list a {
+        text-decoration: none;
+        font-size: 25px;
+        color: #5fc0cd;
+        padding-left: 15px; }
+        .main .list ul .three-list a .icon-arrow-right {
+          vertical-align: top; }
+    .main .list ul .four-list-address {
+      display: inline-block;
+      vertical-align: middle;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-image: url(../photo/task6-8.png);
+      width: 20px;
+      height: 20px;
+      background-position: 6px -14px;
+      margin-left: 1rem; }
+
+.footer {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  bottom: 0;
+  background-color: #f8fafb;
+  text-align: center; }
+  .footer .left-footer {
+    float: left;
+    height: 5rem;
+    width: 40%;
+    line-height: 5rem; }
+    .footer .left-footer .left-button img {
+      width: 30px;
+      height: 23px;
+      max-width: 100%; }
+    .footer .left-footer .left-button span {
+      font-size: 12px;
+      color: #5fc0cd; }
+  .footer .mid-footer {
+    display: inline-block;
+    width: 20%;
+    height: 5rem;
+    float: left;
+    line-height: 5rem;
+    margin-left: -0.6rem; }
+    .footer .mid-footer .write {
+      vertical-align: middle; }
+    .footer .mid-footer img {
+      width: 47px;
+      height: 47px;
+      max-width: 100%; }
+  .footer .right-footer {
+    height: 5rem;
+    width: 40%;
+    line-height: 5rem;
+    float: left; }
+    .footer .right-footer .right-button img {
+      width: 22px;
+      height: 22px;
+      max-width: 100%; }
+    .footer .right-footer .right-button span {
+      font-size: 12px;
+      color: #d8d8d8; }
+  .footer button {
+    padding: 0;
+    background-color: #f8fafb;
+    border: 0;
+    outline: none; }
+
+/*# sourceMappingURL=task12-2.css.map */

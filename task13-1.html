@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>投票</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css\task13-1.css">
+	<style type="text/css">
+	</style>
+</head>
+	<body>
+		<div class="header">
+			<button class="btn-1" type="button"><img src="photo/task7-2.png" class="btn-img-1"/ ></button>
+			<span>投票</span>
+			<button class="btn-2" type="button"><img src="photo/task7-3.png" class="btn-img-2" /></button>
+		</div>
+		<div class="main">
+			<div class="main-header">
+				<span class="main-header-text">发言讨论结束，请大家投票</span>
+				<audio src="audio/task7.mp3" class="mian-header-audio" id="audio1"></audio>
+				<button class="btn-audio" onclick="playPause()"><img class="btn-play-pause" src="photo/task7-4.png"></button>
+				<span class="main-header-triangle"></span>
+			</div> 
+			<div class="main-content">
+				<span class="main-content-header">点击得票数最多人的头像</span>
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">水民</div>
+						<div class="select-list-num">1号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">水民</div>
+						<div class="select-list-num">2号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">警察</div>
+						<div class="select-list-num">3号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div><div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">法官</div>
+						<div class="select-list-num">4号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">狙击手</div>
+						<div class="select-list-num">5号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">医生</div>
+						<div class="select-list-num">6号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">杀手</div>
+						<div class="select-list-num">7号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">水民</div>
+						<div class="select-list-num">8号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">水民</div>
+						<div class="select-list-num">9号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+
+		
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">水民</div>
+						<div class="select-list-num">10号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">水民</div>
+						<div class="select-list-num">11号</div>
+						<div class="select-list-icon">
+							<ul>
+								<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main-content-select">
+					<div class="select-list">
+						<div class="select-list-man">水民</div>
+						<div class="select-list-num">12号</div>
+						<div class="select-list-icon">
+							<ul>
+							<li><a href=""><img src="photo/task7-5.png"></a> </li>
+								<li><a href=""><img src="photo/task7-6.png"></a> </li>
+								<li><a href=""><img src="photo/task7-7.png"></a> </li>
+								<li><a href=""><img src="photo/task7-8.png"></a> </li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+
+		</div>	
+		</div>
+		<div class="footer">
+			<button class="footer-text">投死</button>
+		</div>
+
+		<script type="text/javascript">
+			var myAudio = document.getElementById('audio1');
+	    function playPause(){
+	        if(myAudio.paused){
+	            myAudio.play();
+	        }else{
+	            myAudio.pause();
+	        }
+	    }
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</body>
+</html>

@@ -1,0 +1,167 @@
+html {
+  font-size: calc(100vw/37.5); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  height: 4rem;
+  position: relative;
+  line-height: 4rem; }
+  .header .top-logo-header {
+    position: fixed;
+    z-index: 2;
+    margin: 0 0 0 2%; }
+    .header .top-logo-header img {
+      width: 12px;
+      height: 18px;
+      max-width: 100%;
+      vertical-align: middle; }
+  .header .top-text-header {
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    background-color: #5fc0cd; }
+
+.content {
+  padding-bottom: 9rem; }
+  .content .top-content {
+    width: 100%;
+    height: 16rem;
+    background-image: url(../photo/task5-2.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .content .top-content .photo {
+      display: inline-block;
+      line-height: 16rem; }
+      .content .top-content .photo img {
+        width: 85px;
+        height: 88px;
+        max-width: 100%;
+        margin: 0 2rem;
+        vertical-align: middle; }
+    .content .top-content .name-adress {
+      display: inline-block;
+      vertical-align: middle; }
+      .content .top-content .name-adress .name {
+        font-size: 18px;
+        color: #fff; }
+      .content .top-content .name-adress .adress {
+        font-size: 12px;
+        color: #fff;
+        margin-top: 15px;
+        line-height: 1rem; }
+        .content .top-content .name-adress .adress img {
+          width: 11px;
+          height: 14px;
+          max-width: 100%; }
+        .content .top-content .name-adress .adress span {
+          display: inline-block;
+          padding-left: 10px;
+          vertical-align: top;
+          line-height: 1rem; }
+  .content .introduce-list {
+    list-style: none;
+    width: 100%;
+    margin-left: 2rem; }
+    .content .introduce-list li {
+      border-bottom: 1px solid #d8d8d8;
+      line-height: 5rem; }
+    .content .introduce-list .person-skill .blue {
+      vertical-align: middle;
+      padding: 0 2px;
+      height: 16px;
+      background-color: #5fc0cd;
+      display: inline-block;
+      margin-top: -2px; }
+    .content .introduce-list .person-skill .skill {
+      font-size: 16px;
+      color: #333333;
+      margin-left: 1rem; }
+    .content .introduce-list .person-condition {
+      padding-left: 1.5rem; }
+      .content .introduce-list .person-condition img {
+        vertical-align: middle;
+        width: 13px;
+        height: 13px;
+        max-width: 100%;
+        padding-bottom: 8px;
+        padding-right: 5px; }
+      .content .introduce-list .person-condition span {
+        font-size: 16px;
+        color: #333333; }
+    .content .introduce-list .icon {
+      display: inline-block;
+      padding: 7px 1px 7px 0;
+      background: #b3b3b3;
+      margin: 0 8px;
+      position: relative;
+      top: 2px; }
+    .content .introduce-list .person-work-length, .content .introduce-list .person-work-time, .content .introduce-list .person-work-price, .content .introduce-list .person-work-serve {
+      padding-left: 1.5rem;
+      font-size: 16px;
+      color: #b3b3b3; }
+    .content .introduce-list .person-work-length .work-length {
+      font-size: 16px;
+      color: #333333; }
+    .content .introduce-list .person-work-time .work-length {
+      font-size: 16px;
+      color: #333333; }
+    .content .introduce-list .person-work-price .work-price {
+      font-size: 16px;
+      color: red; }
+    .content .introduce-list .person-work-serve {
+      position: relative; }
+      .content .introduce-list .person-work-serve .work-serve {
+        position: absolute;
+        line-height: 16px;
+        top: 15px;
+        font-size: 14px;
+        color: #333333;
+        padding-right: 25px; }
+
+.footer {
+  width: 100%;
+  height: 5.5rem;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff; }
+  .footer .left-footer {
+    border: 1px solid #5fc0cd;
+    border-radius: 0.4rem;
+    width: 40%;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 3% 5%;
+    text-align: center; }
+    .footer .left-footer a {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      font-size: 17px;
+      color: #5fc0cd;
+      line-height: 4rem; }
+  .footer .right-footer {
+    border: 1px solid #5fc0cd;
+    border-radius: 0.4rem;
+    background-color: #5fc0cd;
+    width: 40%;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 3% 55%;
+    text-align: center; }
+    .footer .right-footer a {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      font-size: 17px;
+      color: #fff;
+      line-height: 4rem; }
+
+/*# sourceMappingURL=task5.css.map */

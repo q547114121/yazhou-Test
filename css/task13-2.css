@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: calc(100vw/3.2);
+  -webkit-text-size-adjust: none; }
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 0.4rem;
+  width: 100%;
+  background-color: #29bde0;
+  text-align: center; }
+
+.header .btn {
+  float: left;
+  background-color: #29bde0; }
+
+.header .btn, .main .top-content .button, .main .list-group .button-3 {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none; }
+
+body {
+  background-color: #f0f0f0; }
+
+.header {
+  z-index: 1; }
+  .header .btn {
+    line-height: 0.4rem;
+    margin-left: 0.11rem !important; }
+    .header .btn img {
+      width: 0.17rem;
+      height: 0.14rem;
+      max-width: 100%;
+      vertical-align: middle; }
+
+.main {
+  padding-top: 0.4rem; }
+  .main .top-content {
+    position: relative;
+    height: 0.58rem;
+    margin: 0.13rem 0.175rem 0;
+    border: 1px solid #c9c9c9;
+    background-color: #fff;
+    font-size: 17.5px;
+    color: #9a9a9a;
+    line-height: 0.58rem;
+    vertical-align: middle;
+    text-align: center; }
+    .main .top-content .button {
+      background-color: #fff;
+      position: absolute;
+      right: 0.07rem;
+      top: 50%;
+      transform: translateY(-50%); }
+      .main .top-content .button img {
+        width: 0.12rem;
+        height: 0.2rem;
+        max-width: 100%; }
+  .main .list-group {
+    position: relative;
+    margin: 0.13rem 0.175rem 0;
+    border: 1px solid #d0d0d0;
+    background-color: #fff; }
+    .main .list-group .first-list {
+      height: 0.45rem;
+      width: 100%;
+      border-bottom: 1px solid #fdd793;
+      text-align: center;
+      line-height: 0.45rem;
+      font-size: 19px;
+      color: #fbb435; }
+    .main .list-group .second-list, .main .list-group .second-list-1 {
+      display: block;
+      height: 0.68rem;
+      margin: 0.15rem 0.25rem 0;
+      background-color: #69d1e9;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      line-height: 0.68rem;
+      border: 1px solid #69d1e9; }
+    .main .list-group .third-list {
+      height: 0.38rem;
+      width: 100%;
+      background-color: #ffffff;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 0.38rem;
+      font-size: 12.5px;
+      color: #787878; }
+    .main .list-group .button-3 {
+      float: right; }
+      .main .list-group .button-3 .glyphicon {
+        border-left: 0.14rem solid #fbb435;
+        border-top: 0.14rem solid transparent;
+        border-bottom: 0.14rem solid transparent;
+        position: fixed;
+        right: 0.22rem;
+        top: 3.2rem; }
+    .main .list-group .second-list-1 {
+      margin-top: 0; }
+    .main .list-group .footer {
+      width: 0.64rem;
+      height: 0.19rem;
+      margin: 0 auto; }
+    .main .list-group .round-footer-1, .main .list-group .round-footer-2, .main .list-group .round-footer-3, .main .list-group .round-footer-4 {
+      float: left;
+      height: 0.08rem;
+      width: 0.08rem;
+      margin: 0.04rem 0.04rem 0;
+      background-color: #69d1e9;
+      border-radius: 50%; }
+    .main .list-group .round-footer-2, .main .list-group .round-footer-3, .main .list-group .round-footer-4 {
+      background-color: #f0f0f0; }
+
+/*# sourceMappingURL=task13-2.css.map */
