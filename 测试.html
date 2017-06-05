@@ -1,48 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <style type="text/css">
-    body{
-      margin: 0;
-    }
-    div{
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-    i{
-      float: left;
-      position: relative;
-      width: 33%;
-      padding: 16.5% 0;
-      
-    }
-    i:before{
-      content: "";
-      position: absolute;
-      top: 1%;
-      bottom: 1%;
-      left: 1%;
-      right: 1%;
-      background-color: red;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" >
+      window.onload=function () {
+          var first = document.forms["aaa"];
+          alert(first.ee.value);
+      };
+    </script>
 </head>
 <body>
-  <div>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-  </div>
+      <button type="button" id="skip-btn"  > aaaaa </button>
+      <form name="aaa">
+        <input type="text" name="ee" value="3">11
+      </form>
 </body>
 </html>

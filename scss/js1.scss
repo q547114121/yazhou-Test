@@ -1,0 +1,27 @@
+@import "normalize";
+$square-bgcolor:#EEB422!default;
+$square-size:25%;
+$btn-height:80px!default;
+$btn-color:#EEB422!default;
+.container{
+  text-align: center;
+  margin: 0 auto;
+}
+.container .square{
+  display: inline-block;
+  width: $square-size;
+  padding-top:$square-size;
+  background: $square-bgcolor;
+  margin: 0.2%;
+  border-radius: 3%;
+}
+.btn-on,.btn-off{
+  display: block;
+  width: 100%;
+  height: $btn-height;
+  margin-top: 2%;
+  color:$btn-color;
+  border: 1px solid $square-bgcolor;
+  border-radius: 4%;
+  cursor:pointer;
+}

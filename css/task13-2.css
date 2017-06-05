@@ -4,7 +4,8 @@ body {
 
 html {
   font-size: calc(100vw/3.2);
-  -webkit-text-size-adjust: none; }
+  -webkit-text-size-adjust: none;
+}
 
 .header {
   position: fixed;
@@ -95,14 +96,20 @@ body {
       font-size: 12.5px;
       color: #787878; }
     .main .list-group .button-3 {
-      float: right; }
+      position: fixed;
+      top:3rem;
+      right:0.21rem;
+      width: 0.22rem;
+      height: 0.6rem;
+      background-color: #ffffff;
+    }
       .main .list-group .button-3 .glyphicon {
+         float: right;
         border-left: 0.14rem solid #fbb435;
         border-top: 0.14rem solid transparent;
         border-bottom: 0.14rem solid transparent;
-        position: fixed;
-        right: 0.22rem;
-        top: 3.2rem; }
+       
+        }
     .main .list-group .second-list-1 {
       margin-top: 0; }
     .main .list-group .footer {
