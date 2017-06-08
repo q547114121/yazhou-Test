@@ -18,8 +18,6 @@ window.onload=function () {
 
 
         function changeBgcolor() {
-
-            // clearInterval(interval);
             //获取九宫格中的3个格子，而且3个格子不重复
             var arr = [];
             while(arr.length < 3){
