@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fb2e9c4-3d68-4b09-a13f-7b8ce1e5705f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/js2-1.js" afterPath="$PROJECT_DIR$/js/js2-1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/测试.html" afterPath="$PROJECT_DIR$/测试.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,8 +66,8 @@
       <file leaf-file-name="js2-1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/js2-1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+            <state relative-caret-position="360">
+              <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
               <folding>
                 <element signature="e#0#48#0" expanded="false" />
               </folding>
@@ -279,12 +279,12 @@
       <option name="presentableId" value="Default" />
       <updated>1496662033787</updated>
       <workItem from="1496662036626" duration="51957000" />
-      <workItem from="1496901004383" duration="23493000" />
+      <workItem from="1496901004383" duration="23631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75450000" />
+    <option name="totallyTimeSpent" value="75588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -486,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/js2-1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+        <state relative-caret-position="360">
+          <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
           </folding>
