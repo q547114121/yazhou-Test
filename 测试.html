@@ -26,21 +26,21 @@
     </style>
 </head>
 <body>
-    <div id="box" class="box"><button id="btn"></button></div>
+
     <script>
-        var arr=[1,2,3,4,5,6,7,8,9,10,"杀手","杀手","杀手"];
-        function shuffle(a) {
-            var length = a.length;
-            var shuffled = Array(length);
-            for (var index = 0, rand; index < length; index++) {
-                rand = parseInt(Math.random() * (index + 1));
-                shuffled[index] = shuffled[rand];
-                shuffled[rand] = a[index];
+        var arr=[1,2,3,4,5,6,7,8];
+        function shuffle(array) {
+            var length=array.length;
+            var shuffled= Array(length);
+            for(var index=0,rand;index <length ;index++){
+                rand=parseInt(Math.random()*(index+1));
+                shuffled[index]=shuffled[rand];
+                shuffled[rand]=array[index]
             }
             return shuffled;
         }
-        alert(shuffle(arr));
-
+        shuffle(arr);
+        console.log(  shuffle(arr));
     </script>
 </body>
 </html>

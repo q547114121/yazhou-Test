@@ -62,28 +62,9 @@ window.onload=function () {
             return shuffled;
         }
         //调用洗牌函数
-
-        alert(shuffle(arr));
+        shuffle(arr);
     }
-    // input.onkeyup=function () {
-    //     switch (true){
-    //         case parseInt(input.value) >= 6 && parseInt(input.value)<=8:
-    //             wolf.innerHTML =1;
-    //             person.innerHTML= num - 1;
-    //             break;
-    //         case num>=9 &&num<=11:
-    //             wolf.innerHTML = 2 ;
-    //             person.innerHTML = num-2;
-    //             break;
-    //         case num>=12 && num<=15:
-    //             wolf.innerHTML = 3;
-    //             person.innerHTML =num -3;
-    //             break;
-    //         case num>=16 && num<=18:
-    //             wolf.innerHTML =4;
-    //             person.innerHTML= num-4;
-    //     }
-    // };
+
 
 
 
