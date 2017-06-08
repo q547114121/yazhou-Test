@@ -6,13 +6,41 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height:200px;
+            background-color: #5fc0cd;
+            position: absolute;
+            top:200px;
+            left: 200px;
+        }
+        #btn{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+    </style>
 </head>
 <body>
-    <p class="passage" id="p">后台查看</p>
-</body>
-<script type="text/javascript">
-    var p =document.getElementById("p");
-    console.dir("p");
-</script>
-</html>
+    <div id="box" class="box"><button id="btn"></button></div>
+    <script>
+        var arr=[1,2,3,4,5,6,7,8,9,10,"杀手","杀手","杀手"];
+        function shuffle(a) {
+            var length = a.length;
+            var shuffled = Array(length);
+            for (var index = 0, rand; index < length; index++) {
+                rand = parseInt(Math.random() * (index + 1));
+                shuffled[index] = shuffled[rand];
+                shuffled[rand] = a[index];
+            }
+            return shuffled;
+        }
+        alert(shuffle(arr));
 
+    </script>
+</body>
+</html>
