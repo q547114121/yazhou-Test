@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">
+        <p>11111</p>
+        <p>11111</p>
+        <p>11111</p>
+        <p>11111</p>
+    </div>
+    <a>222</a>
+     <div class="two">
+
+     </div>
+    <button type="button">0000</button>
+    <button type="button">1111</button>
+
+
+
+    <script>
+        $('button:first').on('click',function () {
+            $('p').appendTo($('.two'));
+        });
+        $('button:last').on('click',function () {
+            $('.two').wrapInner(function () {
+                return '<p></p>';
+            });
+        })
+    </script>
+</body>
+</html>

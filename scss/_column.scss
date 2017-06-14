@@ -1,0 +1,128 @@
+$columns: 12!default;
+// Extra small screen / phone
+$screen-xs :480px!default;
+$screen-xs-min: $screen-xs!default;
+$screen-phone: $screen-xs-min!default;
+// Small screen / tablet
+$screen-sm: 768px!default;
+$screen-sm-min: $screen-sm!default;
+$screen-tablet: $screen-sm-min!default;
+// Medium screen / desktop
+$screen-md:             992px !default;
+$screen-md-min:         $screen-md !default;
+$screen-desktop:        $screen-md-min !default;
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+.container,.row{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+@mixin screen($res-min,$res-max){
+  @media screen and (min-width: $res-min) and (max-width: $res-max) {
+    @content;
+  }}
+@mixin min-screen($res-min){
+  @media screen and (min-width: $res-min) {
+    @content;
+  }
+}
+@mixin max-screen($res-max){
+  @media screen and (max-width: $res-max){
+    @content;
+  }
+}
+
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @extend %clearfix;
+}
+//row
+.row{
+  margin-left: -15px;
+  margin-right: -15px;
+  @extend %clearfix;
+}
+  @include max-screen($screen-xs-max){
+    @for $num from 1 through $columns{
+    .col-xs-#{$num}{
+      position: relative;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: percentage($num/$columns);
+      min-height: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }}
+  }
+  @include min-screen($screen-sm-min){
+    .container{
+      width: 750px;
+    }
+  @for $num from 1 through $columns{
+    .col-sm-#{$num}{
+      position: relative;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: percentage($num/$columns);
+      min-height: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+  }
+  @include min-screen($screen-md-min) {
+    .container {
+      width: 970px;
+    }
+    @for $num from 1 through $columns{
+    .col-md-#{$num} {
+      position: relative;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: percentage($num/$columns);
+      min-height: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+  }
+  @include min-screen($screen-lg-min){
+    .container{
+    width: 1170px;}
+    @for $num from 1 through $columns {
+      .col-lg-#{$num} {
+        position: relative;
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: percentage($num/$columns);
+        min-height: 1px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    }
+  }
+@for $num from 1 through $columns{
+  .col-md-offset-#{$num},.col-xs-offset-#{$num},.col-sm-offset-#{$num},.col-lg-offset-#{$num}{
+    margin-left: percentage($num/$columns);
+  }
+}

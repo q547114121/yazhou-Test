@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0; }
+
+html {
+    font-size: calc(100vw/3.2);
+    -webkit-text-size-adjust: none; }
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 0.4rem;
+    width: 100%;
+    background-color: #29bde0;
+    text-align: center; }
+
+.header .btn-1 {
+    float: left;
+    background-color: #29bde0; }
+
+.header .btn-1, .header .btn-2, .main .main-header .btn-audio, .main .main-content-select {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none; }
+
+.header .btn-2 {
+    float: right;
+    background-color: #29bde0; }
+
+body {
+    background-color: #f0f0f0;
+}
+
+.header {
+    z-index: 1; }
+.header .btn-1 {
+    margin-left: 12px !important;
+    line-height: 0.4rem; }
+.header .btn-1 img {
+    width: 0.12rem;
+    height: 0.2rem;
+    max-width: 100%;
+    vertical-align: middle; }
+.header span {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+.header .btn-2 {
+    margin-right: 0.12rem !important;
+    line-height: 0.4rem; }
+.header .btn-2 img {
+    width: 0.26rem;
+    height: 0.26rem;
+    max-width: 100%;
+    vertical-align: middle; }
+.main{
+    padding-top: 0.4rem;
+}
+
+.main button{
+    width:95%;
+    height:0.44rem;
+    margin-left: 2.5%;
+    margin-right:2.5%;
+    border: none;
+    background-color: #fab344;
+    font-size: 18px;
+    color: #ffffff;
+}
