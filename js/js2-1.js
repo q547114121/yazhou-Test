@@ -1,73 +1,129 @@
 /**
- * Created by Administrator on 2017/6/7.
+ * Created by Administrator on 2017/6/17.
  */
 window.onload=function () {
-    //取得input的value值
-    var input =document.getElementById("input");
-    var num = parseInt(input.value);
-    var person =document.getElementById("person-num");
-    var wolf =document.getElementById("wolf-num");
-    input.addEventListener("change",setNum,false);
-    function setNum(event) {
-        //取得该input元素
-        var target = event.target;
-        //设置正则表达式 测试是否玩家个数处于4-18
-        var pattern =/^([4-9]|(1[0-8]))$/;
-        if(!pattern.test(target.value)){
-            window.confirm("请输入正确的玩家数量。");
-            target.value="";
+    //定义jq变量
+    var $silder =$('#slider-block');
+    var $manNum = $('#manNum');
+    var $subtraction =$('.subtraction');
+    var $add = $('.add');
+
+    var $install = $('#install');
+    //定义正则，判断输入值是否在6-18之间
+    var parttern =/^[6-9]|1[0-8]$/;
+    //获得初始的输入框值，即初始人数6
+    var personNum = Number($manNum.val());
+    //在输入框输入玩家数量，通过条件判断是否在6-18之间，并用正则表达式判断是否合理
+    $manNum.change(function () {
+       if (Number($manNum.val()) <6){
+           alert('人数小于6.');
+           $manNum.val('6');
+       }else if(Number($manNum.val()) >18){
+           alert('人数大于18');
+           $manNum.val('6');
+       }else if(parttern.test($manNum.val()) ==false){
+           alert('输入的玩家人数不符合规范');
+           $manNum.val('6');
+       }
+       //滚动条的值同样改变，再次获得改变后的输入框值
+       $silder.val($manNum.val());
+       personNum = Number($manNum.val());
+    });
+    //滑动条改变时，输入框的value也改变
+    $silder.change(function () {
+        $manNum.val($silder.val());
+        personNum = Number($silder.val());
+    });
+    //点击加号 ，滑动条增加，输入框值夜增加
+    $add.click(function () {
+        $silder.val(Number($silder.val()) + 1);
+
+        if (Number($silder.val()) <6){
+            alert('人数小于6.');
+            $silder.val('6');
+        }else if(Number($silder.val()) >18){
+            alert('人数大于18');
+            $silder.val('18');
         }
-        //根据玩家数目，取得狼人和水民的数目
-        var value =parseInt(target.value);
-        switch (true){
-                    case value >= 6 && value<=8:
-                        wolf.innerHTML =1;
-                        person.innerHTML= tartarget - 1;
-                        break;
-                    case value>=9 &&value<=11:
-                        wolf.innerHTML = 2 ;
-                        person.innerHTML = value-2;
-                        break;
-                    case value>=12 && value<=15:
-                        wolf.innerHTML = 3;
-                        person.innerHTML =value -3;
-                        break;
-                    case value>=16 && value<=18:
-                        wolf.innerHTML =4;
-                        person.innerHTML= value-4;
-                }
-        //设置一个数组存玩家数量，分配玩家数量
-        var arr = [] ;
-        //获得狼人的数量
-        var wolfNum = Number(wolf.innerHTML);
-        //获得水民的数量
-        var personNum =Number(person.innerHTML);
-        //把所有狼人传入数组
-        for(var i=0 ;i<wolfNum;i++){
-            arr.push("狼人");
+        $manNum.val($silder.val());
+        personNum = Number($manNum.val());
+    });
+    //点击减号，滑动条减小，输入框值减少
+    $subtraction.click(function () {
+        $silder.val(Number($silder.val()) -1);
+        if (Number($silder.val()) <6){
+            alert('人数小于6.');
+            $silder.val('6');
+        }else if(Number($silder.val()) >18){
+            alert('人数大于18');
+            $silder.val('18');
         }
-        //把所有水民传入数组
-        for (var j=0;j<personNum;j++){
-            arr.push("水民");
+        $manNum.val($silder.val());
+        personNum = Number($manNum.val());
+    });
+    //实现数组乱序
+    function shuffle(a) {
+        var arr=a.concat();
+        for(var i=arr.length,j;i--;){
+            j=Math.floor(Math.random()*i);
+            var temp = arr[j];
+            arr[j] =arr[i];
+            arr[i]= temp;
         }
-        //设置洗牌函数，把数组打乱
-        function shuffle(array) {
-            var length=array.length;
-            var shuffled= Array(length);
-            for(var index=0,rand;index <length ;index++){
-                rand=parseInt(Math.random()*(index+1));
-                shuffled[index]=shuffled[rand];
-                shuffled[rand]=array[index]
-            }
-            return shuffled;
-        }
-        //调用洗牌函数
-        shuffle(arr);
+        return arr;
     }
 
 
+    
 
+   
 
-
-
+  
+    var arr2=[],arr;
+     //点击设置键，获得相应样式
+    $install.on('click',function () {
+        //先清空玩家框里的子节点
+        $('.player').empty();
+        arr=[];
+        //通过得到输入框的值，来得到杀手水民的数组
+        if(personNum>=6 && personNum<=8){
+            arr.push('杀手');
+            for(var i= 0;i<personNum-1;i++){
+                arr.push('水民');
+            }
+        }else if(personNum >=9 &&personNum<=11){
+            for(var j=0;j<2;j++){
+                arr.push('杀手');
+            }
+            for(var i=0;i<personNum -2 ;i++){
+                arr.push('水民');
+            }
+        }else if(personNum >=12 && personNum <=15){
+            for(var j=0;j<3;j++){
+                arr.push('杀手');
+            }
+            for(var i=0;i<personNum -3 ;i++){
+                arr.push('水民');
+            }
+        }else {
+            for(var j=0;j<4;j++){
+                arr.push('杀手');
+            }
+            for(var i=0;i<personNum -4 ;i++){
+                arr.push('水民');
+            }
+        }
+         //得到乱序后的数组
+        arr2=shuffle(arr);
+        //便利遍历添加节点，并设置属性
+        $.each(arr2, function (n, value) {
+            if(value == '水民'){
+                var span1 =$("<span class='player-man'><i></i>水  民1人</span>");
+                $('.player').append(span1);
+            }else if(value == '杀手'){
+                var span2 =$("<span class='player-ghost'><i></i>杀  手1人</span>");
+                $('.player').append(span2);
+            }
+        });
+    });
 };
