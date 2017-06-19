@@ -7,7 +7,7 @@ window.onload=function () {
     var $manNum = $('#manNum');
     var $subtraction =$('.subtraction');
     var $add = $('.add');
-
+    var $back =$('.btn-1');
     var $install = $('#install');
     //定义正则，判断输入值是否在6-18之间
     var parttern =/^[6-9]|1[0-8]$/;
@@ -75,10 +75,6 @@ window.onload=function () {
 
 
     
-
-   
-
-  
     var arr2=[],arr;
      //点击设置键，获得相应样式
     $install.on('click',function () {
@@ -126,4 +122,11 @@ window.onload=function () {
             }
         });
     });
+
+    //界面返回
+    $back.click(function() {
+        location.href="task13-2.html";
+    });
+
+
 };
