@@ -122,11 +122,18 @@ window.onload=function () {
             }
         });
     });
-
     //界面返回
     $back.click(function() {
         location.href="task13-2.html";
     });
+    //进入查看身份页面
+    $('#deal').click(function () {
+        if(arr2.length !== 0){
+            var url = 'js3.html?' + arr2.join(',');
+            window.location.href = url;
+        }else {
+             alert("请点击 ‘点击设置’按钮来设置玩家配比。")
+        };
 
-
+    });
 };
