@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fb2e9c4-3d68-4b09-a13f-7b8ce1e5705f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/js2-1.css" afterPath="$PROJECT_DIR$/css/js2-1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/js3.css" afterPath="$PROJECT_DIR$/css/js3.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/js2-1.js" afterPath="$PROJECT_DIR$/js/js2-1.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/js3.js" afterPath="$PROJECT_DIR$/js/js3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js2-skip.html" afterPath="$PROJECT_DIR$/js2-skip.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js2-skip2.html" afterPath="$PROJECT_DIR$/js2-skip2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js3.html" afterPath="$PROJECT_DIR$/js3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/测试.html" afterPath="$PROJECT_DIR$/测试.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/测试2.html" afterPath="$PROJECT_DIR$/测试2.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js2-1.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="js2-1.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/js2-1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
+            <state relative-caret-position="131">
               <caret line="433" column="34" lean-forward="true" selection-start-line="433" selection-start-column="34" selection-end-line="433" selection-end-column="34" />
               <folding />
             </state>
@@ -53,8 +49,8 @@
       <file leaf-file-name="js3.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/js3.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1449">
-              <caret line="459" column="9" lean-forward="true" selection-start-line="459" selection-start-column="9" selection-end-line="459" selection-end-column="9" />
+            <state relative-caret-position="219">
+              <caret line="534" column="14" lean-forward="true" selection-start-line="534" selection-start-column="14" selection-end-line="534" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -63,20 +59,18 @@
       <file leaf-file-name="js3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="390">
+              <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js3.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="js3.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/js3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
@@ -107,8 +101,8 @@
       <file leaf-file-name="js2-1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/js2-1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="145" column="39" lean-forward="true" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
+            <state relative-caret-position="78">
+              <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -158,11 +152,11 @@
         <option value="$PROJECT_DIR$/js2-skip.html" />
         <option value="$PROJECT_DIR$/测试.html" />
         <option value="$PROJECT_DIR$/测试2.html" />
-        <option value="$PROJECT_DIR$/js/js2-1.js" />
-        <option value="$PROJECT_DIR$/js/js3.js" />
         <option value="$PROJECT_DIR$/css/js2-1.css" />
-        <option value="$PROJECT_DIR$/js3.html" />
         <option value="$PROJECT_DIR$/css/js3.css" />
+        <option value="$PROJECT_DIR$/js/js2-1.js" />
+        <option value="$PROJECT_DIR$/js3.html" />
+        <option value="$PROJECT_DIR$/js/js3.js" />
       </list>
     </option>
   </component>
@@ -318,15 +312,15 @@
       <workItem from="1497162185555" duration="2423000" />
       <workItem from="1497366405008" duration="5916000" />
       <workItem from="1498010694899" duration="3770000" />
-      <workItem from="1498209651231" duration="45685000" />
+      <workItem from="1498209651231" duration="48312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141172000" />
+    <option name="totallyTimeSpent" value="143799000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -707,24 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/js2-1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="145" column="39" lean-forward="true" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/js3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js2-skip.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -735,29 +711,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js3.html">
+    <entry file="file://$PROJECT_DIR$/css/js2-1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="131">
+          <caret line="433" column="34" lean-forward="true" selection-start-line="433" selection-start-column="34" selection-end-line="433" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2-1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/js3.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="459" column="9" lean-forward="true" selection-start-line="459" selection-start-column="9" selection-end-line="459" selection-end-column="9" />
+        <state relative-caret-position="219">
+          <caret line="534" column="14" lean-forward="true" selection-start-line="534" selection-start-column="14" selection-end-line="534" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/js2-1.css">
+    <entry file="file://$PROJECT_DIR$/js3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="433" column="34" lean-forward="true" selection-start-line="433" selection-start-column="34" selection-end-line="433" selection-end-column="34" />
+        <state relative-caret-position="390">
+          <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

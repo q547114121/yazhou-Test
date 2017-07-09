@@ -44,7 +44,7 @@ window.onload=function () {
             $silder.val($manNum.val());
             return false;
         }
-    })
+    });
     //滑动条改变时，输入框的value也改变
     $silder.change(function () {
         $manNum.val($silder.val());

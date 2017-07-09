@@ -14,6 +14,6 @@ $('#Back-Icon').click(function () {
 $('#deal').click(function () {
     $('#personRiddle').toggle();
     $('#personResult').toggle(0,function () {
-        $(this).find('span').text('1111');
+        $(this).find('span').text('');
     });
 });

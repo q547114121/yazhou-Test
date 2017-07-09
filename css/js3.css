@@ -412,6 +412,9 @@ template {
 
 
 @media screen and (min-width: 426px){
+    html {
+        font-size: calc(385px/3.2)!important;
+        -webkit-text-size-adjust: none; }
     .container{
         position:relative;
         width: 425px;
@@ -419,13 +422,6 @@ template {
     }
     .header{
         position: absolute!important;
-    }
-    html {
-        font-size: calc(385px/3.2)!important;
-        -webkit-text-size-adjust: none; }
-    input[type='range']{
-        width: 70%!important;
-        margin-top: 0.30rem!important;
     }
 }
 html {
@@ -538,7 +534,6 @@ html {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top:0.1rem ;
     width: 2.9rem;
     height: 0.44rem;
     font-size: 22px;
