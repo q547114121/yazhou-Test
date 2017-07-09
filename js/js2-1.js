@@ -29,6 +29,22 @@ window.onload=function () {
        $silder.val($manNum.val());
        personNum = Number($manNum.val());
     });
+    $manNum.keypress(function (event) {
+        if(event.keyCode ==13){
+            if (Number($manNum.val()) <6){
+                alert('人数小于6.');
+                $manNum.val('6');
+            }else if(Number($manNum.val()) >18){
+                alert('人数大于18');
+                $manNum.val('6');
+            }else if(parttern.test($manNum.val()) ==false){
+                alert('输入的玩家人数不符合规范');
+                $manNum.val('6');
+            }
+            $silder.val($manNum.val());
+            return false;
+        }
+    })
     //滑动条改变时，输入框的value也改变
     $silder.change(function () {
         $manNum.val($silder.val());
@@ -36,28 +52,21 @@ window.onload=function () {
     });
     //点击加号 ，滑动条增加，输入框值夜增加
     $add.click(function () {
-        $silder.val(Number($silder.val()) + 1);
-
-        if (Number($silder.val()) <6){
-            alert('人数小于6.');
-            $silder.val('6');
-        }else if(Number($silder.val()) >18){
+        if(personNum ==18){
             alert('人数大于18');
             $silder.val('18');
         }
+        $silder.val(Number($silder.val()) + 1);
         $manNum.val($silder.val());
         personNum = Number($manNum.val());
     });
     //点击减号，滑动条减小，输入框值减少
     $subtraction.click(function () {
-        $silder.val(Number($silder.val()) -1);
-        if (Number($silder.val()) <6){
+        if (personNum ==6){
             alert('人数小于6.');
             $silder.val('6');
-        }else if(Number($silder.val()) >18){
-            alert('人数大于18');
-            $silder.val('18');
         }
+        $silder.val(Number($silder.val()) -1);
         $manNum.val($silder.val());
         personNum = Number($manNum.val());
     });
@@ -74,7 +83,7 @@ window.onload=function () {
     }
 
 
-    
+
     var arr2=[],arr;
      //点击设置键，获得相应样式
     $install.on('click',function () {
@@ -121,6 +130,7 @@ window.onload=function () {
                 $('.player').append(span2);
             }
         });
+
     });
     //界面返回
     $back.click(function() {
@@ -129,11 +139,16 @@ window.onload=function () {
     //进入查看身份页面
     $('#deal').click(function () {
         if(arr2.length !== 0){
-            var url = 'js3.html?' + arr2.join(',');
+            var url = 'js3.html';
+            //把已经确定的乱序数组封装成JSON字符串，然后保存到本地存储。
+            var lastArr =JSON.stringify(arr2);
+            localStorage.setItem('lastArr',lastArr);
             window.location.href = url;
         }else {
              alert("请点击 ‘点击设置’按钮来设置玩家配比。")
         };
+});
 
-    });
+
+
 };

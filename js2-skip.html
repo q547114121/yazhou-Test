@@ -9,42 +9,41 @@
         <link rel="stylesheet" type="text/css" href="css/js2-1.css">
     </head>
     <body>
-        <div class="header">
-            <button class="btn-1" type="button"><img src="photo/Back-Icon.png" class="btn-img-1"/ ></button>
-            <span>玩家配比</span>
-            <button class="btn-2" type="button"><img src="photo/circled-help.png" class="btn-img-2" /></button>
-        </div>
-        <div class="main">
-            <div class="player-install">
-                <div class="left-install">玩家配比</div>
-                <div class="right-install">
-                    <div class="player"></div>
-                    <div class="install" id="install">点击设置</div>
+        <div class="container">
+            <div class="header">
+                <button class="btn-1" type="button"><img src="photo/Back-Icon.png" class="btn-img-1"/ ></button>
+                <span>参数设置</span>
+                <button class="btn-2" type="button"><img src="photo/circled-help.png" class="btn-img-2" /></button>
+            </div>
+            <div class="main">
+                <div class="player-install">
+                    <div class="left-install">玩家配比</div>
+                    <div class="right-install">
+                        <div class="player"></div>
+                        <div class="install" id="install">点击设置<i><img src="photo/pencil.png"></i></div>
+                    </div>
+                </div>
+                <form class="man-ghost">
+                        <input type="text" placeholder="水民词组" class="man" id="man">
+                        <input type="text" placeholder="幽灵词组" class="ghost" id="ghost">
+                </form>
+                <div class="man-mun">
+                    <form>
+                        <label>
+                            玩家人数<input type="text" id="manNum" class="person-num" value="6">人
+                        </label>
+                        <div class="btn-control">
+                              <button type="button" class="subtraction">-</button>
+                              <input  class="slider" id="slider-block"  type="range" min="6" max="18" value="6" step="1"/>
+                              <button type="button" class="add">+</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <form class="man-ghost">
-                    <input type="text" placeholder="水民词组" class="man" id="man">
-                    <input type="text" placeholder="幽灵词组" class="ghost" id="ghost">
-            </form>
-            <div class="man-mun">
-                <form>
-                    <label>
-                        玩家人数<input type="text" id="manNum" class="person-num" value="6">人
-                    </label>
-                    <div class="btn-control">
-                          <button type="button" class="subtraction">-</button>
-                          <input  class="slider" id="slider-block"  type="range" min="6" max="18" value="6" step="1"/>
-                          <button type="button" class="add">+</button>
-                    </div>
-
-
-                </form>
+            <div class="footer">
+                <button type="button" id="deal">去发牌</button>
             </div>
         </div>
-        <div class="footer">
-            <button type="button" id="deal">去发牌</button>
-        </div>
-
 
 
 

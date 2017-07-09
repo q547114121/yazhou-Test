@@ -6,19 +6,19 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
 </head>
 <body>
-
+<input type="text" class="one" value="333">
 
 
 
 <script>
-    var request =new XMLHttpRequest();
-    request.open('GET','get.php',true);
-    request.send(null);
-    request.open('POST','post.php',true);
-    request.setRequestHeader("Content-type",'application/x-www-form-urlencoded');
-    request.send('name=杨&age=19');
+ var box=[1,2,3,4,5];
+ var Json =JSON.stringify(box);
+localStorage.setItem('arr',Json);
 </script>
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
 </body>
 </html>
