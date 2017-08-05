@@ -444,46 +444,55 @@ html {
     height: 0.4rem;
     width: 100%;
     background-color: #29bde0;
-    text-align: center; }
+    text-align: center;
+    z-index: 1;
+}
 
 .header .btn-1 {
     float: left;
-    background-color: #29bde0; }
-
-.header .btn-1, .header .btn-2 {
+    margin: 0;
+    padding: 0;
+    height: 0.4rem;
+    outline: none;
+    border: none;
+    background-color: #29bde0;
+    margin-left: 12px !important;
+    line-height: 0.2rem;
+}
+.header .btn-1 img {
+  width: 0.12rem;
+  height: 0.2rem;
+  max-width: 100%;
+  vertical-align: middle;
+  float: right;
+}
+.header .btn-2 {
+    float: right;
+    height: 0.4rem;
     margin: 0;
     padding: 0;
     outline: none;
-    border: none; }
+    border: none;
+    background-color: #29bde0;
+    margin-right: 0.12rem !important;
 
-.header .btn-2 {
-    float: right;
-    background-color: #29bde0; }
-.header {
-    z-index: 1; }
-.header .btn-1 {
-    margin-left: 12px !important;
-    line-height: 0.2rem; }
-.header .btn-1 img {
-    width: 0.12rem;
-    height: 0.2rem;
-    max-width: 100%;
-    vertical-align: middle; }
+}
+.header .btn-2 img {
+  width: 0.26rem;
+  height: 0.26rem;
+  max-width: 100%;
+  float: right;
+}
 .header span {
     font-size: 20px;
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
-.header .btn-2 {
-    margin-right: 0.12rem !important;
-    line-height: 0.2rem; }
-.header .btn-2 img {
-    width: 0.26rem;
-    height: 0.26rem;
-    max-width: 100%;
-    vertical-align: middle; }
+    transform: translate(-50%, -50%);
+}
+
+
 .main{
     padding-top: 0.4rem;
 }
@@ -651,18 +660,21 @@ input::-webkit-input-placeholder {
   height: 0.6rem;
   background-color: #efefef;
   position: relative;
+
 }
   .footer button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin-top:0.1rem ;
-    width: 2.9rem;
+
+    width: 95%;
     height: 0.44rem;
     font-size: 22px;
     color: #ffffff;
     letter-spacing: 4px;
     border: none;
-    background-color: #fab334; }
+    background-color: #fab334;
+  }
 
 /*# sourceMappingURL=js2-1.css.map */

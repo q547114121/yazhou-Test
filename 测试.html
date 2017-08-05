@@ -6,19 +6,45 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <style>
+        div {  width:40px; height:40px;
+            position:relative; left:0px;
+            background:green;  }
+        div.newcolor { background:blue; }
+        span {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: #1d7ad9;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-<input type="text" class="one" value="333">
+<button id="start">start</button>
+<button id="end">end</button>
 
-
-
+<div></div>
+<span></span>
 <script>
- var box=[1,2,3,4,5];
- var Json =JSON.stringify(box);
-localStorage.setItem('arr',Json);
-</script>
+    var arr=[1,2,3,4,5];
+    var i=1;
+    var j=0;
+    $("#start").click(function () {
+        if(i%2){
+            alert(arr[j]);
+            i++;
+        } else{
+            alert(arr[j]);
+            j++;
+            i++;
+        }
+    });
 
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+
+
+
+
+</script>
 </body>
 </html>

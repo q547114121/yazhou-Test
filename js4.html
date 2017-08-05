@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>查看身份</title>
-    <link rel="stylesheet" type="text/css" href="css/js3.css">
+    <link type="text/css" rel="stylesheet" href="css/js4.css">
+    <title>法官台本</title>
 </head>
 <body>
 <div class="container">
@@ -17,14 +16,12 @@
         <button class="btn-2" type="button"><img src="photo/circled-help.png" class="btn-img-2" /></button>
     </div>
     <div class="main">
-        <div class="identity">
-            <div class="person-num" id="personNum"></div>
-            <img src="photo/js3.png" class="photo" id="personRiddle" />
-            <div class="person-result" id="personResult">
-                <img src="photo/js3-1.png" class="photo-result">
-                <span id="personName" class="person-intrduce"></span>
-            </div>
-         </div>
+        <div class="main-header">
+            <span class="main-header-text">发言讨论结束，请大家投票</span>
+            <audio src="audio/task7.mp3" class="mian-header-audio" id="audio1"></audio>
+            <button class="btn-audio" onclick="playPause()"><img class="btn-play-pause" src="photo/task7-4.png"></button>
+            <span class="main-header-triangle"></span>
+        </div>
     </div>
     <div class="footer">
         <button type="button" id="deal"></button>
@@ -49,16 +46,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
-<script type="text/javascript" src="js/js3.js"></script>
+<script type="text/javascript" src="js/js4.js"></script>
 </body>
 </html>

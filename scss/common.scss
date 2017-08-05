@@ -15,8 +15,8 @@
   text-align: right;
 }
 @mixin font($size:14px,$color:#fff){
-    font-size: $size;
-    color: $color;
+  font-size: $size;
+  color: $color;
 }
 //clear float
 %clearfix{
@@ -38,5 +38,8 @@
 }
 //px to rem
 @mixin px2rem($name,$px){
-  #{$name}:$px/64px * 1rem;
+  #{$name}:$px/200px * 1rem;
+}
+@function pxTorem($px){
+  @return $px/200px * 1rem;
 }

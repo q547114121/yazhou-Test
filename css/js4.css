@@ -428,7 +428,7 @@ html {
     font-size: calc(100vw/3.2);
     -webkit-text-size-adjust: none; }
 .container{
-   background-color: #29bde0;
+    background-color: #29bde0;
 }
 .header {
     position: fixed;
@@ -467,7 +467,7 @@ html {
     font-size: 20px;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%); }
 .header .btn-2 {
@@ -482,53 +482,6 @@ html {
     padding-top: 0.4rem;
 }
 
-
-
-
-.main .identity{
-    margin: 0.42rem 0.43rem 0.56rem;
-    position: relative;
-    text-align: center;
-}
-.main .identity .person-num{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 0.33rem;
-    height: 0.33rem;
-    background-color: #ffffff;
-    border-radius: 50%;
-    color: red;
-    font-size: 20px;
-    text-align: center;
-    line-height: 0.33rem;
-    vertical-align: middle;
-    font-weight: bold;
-}
-.main .identity .photo{
-    width: 2.32rem;
-    height: 3.28rem;
-    max-width: 100%;
-
-}
-#personResult{
-    display: none;
-}
-.main .identity .photo-result{
-    width: 2.32rem;
-    height: 3.28rem;
-    max-width: 100%;
-
-}
-.main .identity .person-result .person-intrduce{
-    position: absolute;
-    top:2rem;
-    left:50%;
-    transform: translateX(-50%);
-    letter-spacing:4px;
-    color:#29bde0;
-    font-size: 20px;
-}
 .footer {
     height: 0.6rem;
     position: relative;
