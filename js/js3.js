@@ -41,7 +41,9 @@ $('#deal').on('click',function () {
                 $('#deal').html('查看'+num+'号身份');
             i++;
         }
-
+    else{
+            location.href="js4.html";
+        }
     }
 
 

@@ -7,32 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
     <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    <div class="one">
-        <p>11111</p>
-        <p>11111</p>
-        <p>11111</p>
-        <p>11111</p>
-    </div>
-    <a>222</a>
-     <div class="two">
+<label>
+    请输入成绩： <input type="text">
+</label>
 
-     </div>
-    <button type="button">0000</button>
-    <button type="button">1111</button>
-
+<p></p>
 
 
     <script>
-        $('button:first').on('click',function () {
-            $('p').appendTo($('.two'));
-        });
-        $('button:last').on('click',function () {
-            $('.two').wrapInner(function () {
-                return '<p></p>';
-            });
-        })
+       function Super(name) {
+           this.name=name;
+           this.colors=['red','blue'];
+       }
+       Super.prototype.sayName=function () {
+           alert(this.name);
+       };
+       function Sub(age,name) {
+           Super.call(this,name);
+           this.age=age;
+       }
+       function inheritPrototype(Sub,Super) {
+           var prototype=Object.create(Super.prototype);
+           prototype.constructor=Sub;
+           Sub.prototype=prototype;
+       }
+       Sub.prototype=new Super();
+       inheritPrototype(Sub,Super);
+       var person=new Sub(29,'jack');
+       alert(person.name);
     </script>
 </body>
 </html>

@@ -29,6 +29,7 @@ window.onload=function () {
        $silder.val($manNum.val());
        personNum = Number($manNum.val());
     });
+    //input输入框按下enter键，页面不能刷新
     $manNum.keypress(function (event) {
         if(event.keyCode ==13){
             if (Number($manNum.val()) <6){
@@ -138,7 +139,7 @@ window.onload=function () {
     });
     //进入查看身份页面
     $('#deal').click(function () {
-        if(arr2.length !== 0){
+        if(arr2.length == personNum){
             var url = 'js3.html';
             //把已经确定的乱序数组封装成JSON字符串，然后保存到本地存储。
             var lastArr =JSON.stringify(arr2);
@@ -146,7 +147,7 @@ window.onload=function () {
             window.location.href = url;
         }else {
              alert("请点击 ‘点击设置’按钮来设置玩家配比。")
-        };
+        }
 });
 
 
