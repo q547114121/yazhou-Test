@@ -1,27 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="js/state-machine.js"></script>
     <title>Document</title>
-    <style type="text/css" >
-        .gradient-icon {
-    height:50px;
-    background:linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%);
-}   .box{
-    background-color: #888;
-    height: 200px;
-}
-    </style>
 
 </head>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            border:1px solid #000;
+            margin: 20px;
+        }
+
+    </style>
 <body>
-<div class="box">
-    <div class="gradient-icon"></div>
-</div>
-<script>
- var b=localStorage.getItem('arr');
- alert(typeof JSON.parse(b));
-</script>
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <div class="scale"></div>
 </body>
+    <script>
+        (function () {
+            var fsm=new StateMachine({
+                transitions:[
+                    {name:'start',from:'none',to:'red'},
+                    {name:'warn',from:'red',to:'green'},
+                    {name:'clam',from:'green',to:'red'}
+                ],
+                methods:{
+                    onEnterRed:function (lifecycle) {
+                        $('div').css('background','red');
+                    },
+                    onEnterGreen:function (lifecycle) {
+                        $('div').css('background','green');
+                    }
+                }
+            });
+            $('div').on('click',function () {
+                alert(fsm.state);
+               fsm[fsm.transitions()[0]]()  ;
+               alert(fsm.state);
+                fsm[fsm.transitions()[0]]()  ;
+                alert(fsm.state);
+            });
+        })();
+    </script>
 </html>
