@@ -11,37 +11,38 @@
         .red{
             background-color: red;
         }
+        div{
+            width:100px;
+            height: 100px;
+            border: 1px solid red;
+            margin-bottom: 10px;
+
+            /*display: none;*/
+        }
+        .one{
+            background-color: #99dff0;
+        }
+        .two{
+            background-color: #83b09a;
+        }
     </style>
 </head>
 <body>
-<label>
-    请输入成绩： <input type="text">
-</label>
+<span>1</span>
+<span>1</span>
+<span>1</span>
+<div class="two">11111</div>
+<div class="one">22222</div>
+<div class="one">22222</div>
+<!--<div class="one">22222</div>-->
+<button>1</button>
 
-<p></p>
 
+ <script>
+    $('button').click(function () {
+        alert($('div').length);
+    });
 
-    <script>
-       function Super(name) {
-           this.name=name;
-           this.colors=['red','blue'];
-       }
-       Super.prototype.sayName=function () {
-           alert(this.name);
-       };
-       function Sub(age,name) {
-           Super.call(this,name);
-           this.age=age;
-       }
-       function inheritPrototype(Sub,Super) {
-           var prototype=Object.create(Super.prototype);
-           prototype.constructor=Sub;
-           Sub.prototype=prototype;
-       }
-       Sub.prototype=new Super();
-       inheritPrototype(Sub,Super);
-       var person=new Sub(29,'jack');
-       alert(person.name);
-    </script>
+     </script>
 </body>
 </html>

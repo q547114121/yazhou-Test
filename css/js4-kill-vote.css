@@ -389,7 +389,6 @@ template {
 [hidden] {
     display: none; }
 
-
 .pull-right {
     float: right; }
 
@@ -405,15 +404,14 @@ template {
 .align-right {
     text-align: right; }
 
-.clearfix{
-
+.clearfix:before,.clearfix:after{
+    content: "";
+    display: table;
 }
 .clearfix:after{
-    content: "\200B";
-    display: block;
-    height: 0;
     clear: both;
 }
+
 
 @media screen and (min-width: 426px){
     html {
@@ -486,7 +484,6 @@ html {
     max-width: 100%;
     vertical-align: middle; }
 .main{
-
     padding-top: 0.4rem;
     padding-bottom: 0.6rem;
 }
@@ -494,48 +491,46 @@ html {
 
 
 .main-header {
-  height: 0.41rem;
-  font-size: 0.13rem;
-  background-color: #b9e9f5;
-  position: relative; }
+    height: 0.41rem;
+    font-size: 0.13rem;
+    background-color: #b9e9f5;
+    position: relative; }
 
 .main-header-text {
-  margin-left: 0.23rem;
-  line-height: 0.41rem;
-  vertical-align: middle; }
+    margin-left: 0.23rem;
+    line-height: 0.41rem;
+    vertical-align: middle; }
 
 .main-header-triangle {
-  position: absolute;
-  z-index: 2;
-  width: 0;
-  height: 0;
-  left: 0.4rem;
-  top: 0.41rem;
-  border-top: 8px solid #b9e9f5;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent; }
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    left: 0.4rem;
+    top: 0.41rem;
+    border-top: 8px solid #b9e9f5;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent; }
 
 .main-content {
-  height: 0.45rem;
-  line-height: 0.4rem;
-  vertical-align: middle;
-  color: #ffffff;
-  font-size: 0.13rem;
-  padding-left: 0.35rem; }
+    height: 0.45rem;
+    line-height: 0.4rem;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 0.13rem;
+    padding-left: 0.35rem; }
 
 .person-info {
-  float: left;
-  width: 33%;
-  position: relative;
-  box-sizing: border-box;
-  padding-left: 7%;
-  padding-bottom: 0.37rem;
-  background-color: #29bde0;;
-}
+    float: left;
+    width: 33%;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 7%;
+    padding-bottom: 0.37rem; }
 .person-info:hover .person-kill{
-    display: none;
+    display: block;
 }
-  .person-info .person-name {
+.person-info .person-name {
     font-size: 0.15rem;
     color: #565656;
     text-align: center;
@@ -547,7 +542,7 @@ html {
     border-top: 0.025rem solid #ffffff;
     border-left: 0.025rem solid #ffffff;
     border-right: 0.025rem solid #ffffff; }
-  .person-info .person-num {
+.person-info .person-num {
     float: left;
     width: 0.63rem;
     text-align: center;
@@ -557,7 +552,7 @@ html {
     border-bottom: 0.025rem solid #ffffff;
     border-left: 0.025rem solid #ffffff;
     border-right: 0.025rem solid #ffffff; }
-  .person-info .person-kill {
+.person-info .person-kill {
     position: absolute;
     top: 0.73rem;
     left: 50%;
@@ -565,26 +560,23 @@ html {
     display: none; }
 
 .footer {
-  height: 0.6rem;
+    height: 0.6rem;
     width: 100%;
-  position: fixed;
+    position: fixed;
     bottom: 0;
-  background-color: #29bde0;
-    border-top:1px solid #b9e9f5 ;
-}
+    background-color: #29bde0; }
 
 .footer button {
-  position: absolute;
-  left: 50%;
-  top:50%;
-  transform: translate(-50%,-50%);
-  width: 2.9rem;
-  height: 0.44rem;
-  font-size: 22px;
-  color: #ffffff;
-  letter-spacing: 4px;
-  border: none;
-  background-color: #fab334; }
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.9rem;
+    height: 0.44rem;
+    font-size: 22px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    border: none;
+    background-color: #fab334; }
 
 /*# sourceMappingURL=js4.css.map */
 

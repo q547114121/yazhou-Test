@@ -23,29 +23,7 @@
     <div class="scale"></div>
 </body>
     <script>
-        (function () {
-            var fsm=new StateMachine({
-                transitions:[
-                    {name:'start',from:'none',to:'red'},
-                    {name:'warn',from:'red',to:'green'},
-                    {name:'clam',from:'green',to:'red'}
-                ],
-                methods:{
-                    onEnterRed:function (lifecycle) {
-                        $('div').css('background','red');
-                    },
-                    onEnterGreen:function (lifecycle) {
-                        $('div').css('background','green');
-                    }
-                }
-            });
-            $('div').on('click',function () {
-                alert(fsm.state);
-               fsm[fsm.transitions()[0]]()  ;
-               alert(fsm.state);
-                fsm[fsm.transitions()[0]]()  ;
-                alert(fsm.state);
-            });
-        })();
+        var b =sessionStorage.getItem('a');
+        alert(b);
     </script>
 </html>

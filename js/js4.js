@@ -40,4 +40,9 @@ $(function () {
         location.href='js4-1.html';
     });
 
+    // 因为内部每个玩家信息的小方块是浮动的，当玩家较少时，main固定高度，玩家较多时呢高度不设置值
+    if($('.person-info').length <=9){
+        $('.main').css('height',"4.5rem");
+    }
+
 });

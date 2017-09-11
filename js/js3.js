@@ -20,31 +20,30 @@ $(function () {
 
 //为查看身份按钮添加事件
 $('#deal').on('click',function () {
-    if(num<arr.length+1){
+    if(num<arr.length+1) {
         //通过取余数来显示隐藏图片
-        if((i+1)%2){
+        if ((i + 1) % 2) {
             $('#personNum').html(num);
             $('#personResult').toggle();
             $('#personRiddle').toggle();
-            $('#personName').html('角色:'+arr[num-1]);
+            $('#personName').html('角色:' + arr[num - 1]);
             num++;
-            if(num<arr.length+1){
-            $('#deal').html('隐藏并传递给'+num+'号');
-            }else {
+            if (num < arr.length + 1) {
+                $('#deal').html('隐藏并传递给' + num + '号');
+            } else {
                 $('#deal').html('法官查看');
             }
             i++;
-        }else {
+        } else {
             $('#personNum').html(num);
             $('#personResult').toggle();
             $('#personRiddle').toggle();
-                $('#deal').html('查看'+num+'号身份');
+            $('#deal').html('查看' + num + '号身份');
             i++;
         }
-    else{
+    }else{
             location.href="js4.html";
         }
-    }
+    });
 
 
-});

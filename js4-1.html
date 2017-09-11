@@ -11,42 +11,50 @@
 <body>
 <div class="container">
     <div class="header">
-        <button class="btn-1" type="button" id="Back-Icon"><img src="photo/Back-Icon.png" class="btn-img-1"/ ></button>
+        <button class="btn-1" type="button" id="Back-Icon"><img src="photo/Back-Icon.png" class="btn-img-1" ></button>
         <span>查看身份</span>
         <button class="btn-2" type="button"><img src="photo/circled-help.png" class="btn-img-2" /></button>
     </div>
     <div class="main" id="main">
         <div class="day-container">
-            <div class="first-day">第一天
-                <img src="photo/js4.png" />
-            </div>
-            <div class="course">
+            <!--<div class="num-day" id="dayNum">-->
+                <!--<span><img src="photo/js4.png" /></span>-->
+                <!--<div class="game-message">-->
+                    <!--<i></i>-->
+                    <!--<p></p>-->
+                    <!--<p></p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="course" id="course">
+                <div class="triangle"></div>
                 <ul>
-                    <li class="killer">
-                        <i></i>
+                    <li class="killer" id="killer">
                         <span><img src="photo/moon.png"></span>
-                        <div>
+                        <div class="game-text">
+                            <i></i>
                             杀手杀人
                         </div>
+                        <p class="kill-result"></p>
                     </li>
-                    <li class="last-words">
-                        <i></i>
+                    <li class="last-words" id="lastWords">
                         <span><img src="photo/sun.png"></span>
-                        <div>
+                        <div class="game-text">
+                            <i></i>
                             亡灵发表遗言
                         </div>
                     </li>
-                    <li>
-                        <i></i>
-                        <div>
+                    <li id="speaking">
+                        <div class="game-text">
+                            <i></i>
                             玩家依次发言
                         </div>
                     </li>
-                    <li>
-                        <i></i>
-                        <div>
+                    <li class="vote" id="vote">
+                        <div class="game-text">
+                            <i></i>
                            投票
                         </div>
+                        <p class="vote-result"></p>
                     </li>
                 </ul>
             </div>
@@ -77,6 +85,7 @@
 
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script src="js/state-machine.js"></script>
 <script type="text/javascript" src="js/js4-1.js"></script>
 </body>
 </html>

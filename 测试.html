@@ -19,6 +19,7 @@
         }
     </style>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/state-machine.js"></script>
 </head>
 <body>
 <button id="start">start</button>
@@ -27,19 +28,21 @@
 <div></div>
 <span></span>
 <script>
-    var arr=[1,2,3,4,5];
-    var i=1;
-    var j=0;
-    $("#start").click(function () {
-        if(i%2){
-            alert(arr[j]);
-            i++;
-        } else{
-            alert(arr[j]);
-            j++;
-            i++;
-        }
+    var fsm = new StateMachine({
+//        init:'none',
+        transitions: [
+            {name: 'open', from: 'none', to: 'green'},
+            {name: 'warn', from: 'green', to: 'yellow'},
+            {name: 'panic', from: 'green', to: 'red'},
+            {name: 'panic', from: 'yellow', to: 'red'},
+            {name: 'calm', from: 'red', to: 'yellow'},
+            {name: 'clear', from: 'red', to: 'green'},
+            {name: 'clear', from: 'yellow', to: 'green'}
+        ]
     });
+    sessionStorage.setItem('a',111);
+    location.href='test.html';
+
 
 
 

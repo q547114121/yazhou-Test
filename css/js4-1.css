@@ -423,6 +423,9 @@ template {
     .header{
         position: absolute!important;
     }
+    .footer{
+        width: 425px!important;
+    }
 }
 html {
     font-size: calc(100vw/3.2);
@@ -480,25 +483,30 @@ html {
     vertical-align: middle; }
 .main{
     padding-top: 0.4rem;
+    padding-bottom: 0.6rem;
 }
 .main {
-  height: 4.5rem;
+  /*height: 4.5rem;*/
   background-color: #f0f0f0; }
   .main .day-container {
     margin-top: 0.21rem;
     margin-left: 0.04rem;
     margin-right: 0.04rem;
-    border: 1px solid #888888;
-    background-color: #ffffff; }
-  .main .first-day {
-    position: relative;
-    height: 0.42rem;
-    line-height: 0.42rem;
-    text-align: center;
-    font-size: 0.15rem;
-    color: #24a7c6;
-    border-bottom: 1px solid #888888; }
-    .main .first-day img {
+    /*border: 1px solid #888888;*/
+     }
+
+    .main .num-day span{
+        position: relative;
+        font-size: 0.15rem;
+        display: block;
+        height: 0.42rem;
+        line-height: 0.42rem;
+        text-align: center;
+        color: #24a7c6;
+        border: 1px solid #c9c9c9;
+        background-color: #ffffff;
+    }
+    .main .num-day img {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -506,6 +514,48 @@ html {
       width: 0.15rem;
       height: 0.09rem;
       max-width: 100%; }
+    .main .num-day .game-message{
+        font-size: 0.15rem;
+        position: relative;
+        margin-top: 0.05rem;
+        margin-bottom: 0.05rem;
+        border:1px solid #c9c9c9 ;
+        background-color: #ffffff;
+    }
+    .none{
+        display: none;
+    }
+    .game-message p{
+        margin: 0.08rem;
+        text-align: center;
+    }
+    .game-message i {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-right: 0.08rem solid transparent;
+        border-left: 0.08rem solid transparent;
+        border-bottom: 0.08rem solid #ffffff;
+        left: 50%;
+        transform: translate(-50%, -100%);
+
+    }
+    .main .course{
+        position: relative;
+        border: 1px solid #c9c9c9;
+        background-color: #ffffff;
+        margin-top: 0.15rem;
+    }
+    .main .course .triangle{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-right: 0.08rem solid transparent;
+        border-left: 0.08rem solid transparent;
+        border-bottom: 0.08rem solid #ffffff;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
   .main .course ul {
     border-left: 2px solid #c9c9c9;
     list-style: none;
@@ -514,16 +564,26 @@ html {
     margin-left: 0.18rem; }
   .main .course li {
     position: relative;
-    font-size: 0.15rem;
-    width: 2.35rem;
-    height: 0.38rem;
     margin-bottom: 0.15rem;
-    color: #ffffff;
-    text-align: center;
-    background-color: #24a7c6;
-    line-height: 0.38rem;
-    vertical-align: middle; }
-  .main .course i {
+     }
+.main .course li p{
+    font-size: 0.15rem;
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+}
+    .main .course .game-text{
+        position: relative;
+        font-size: 0.15rem;
+        width: 2.35rem;
+        height: 0.38rem;
+        color: #ffffff;
+        text-align: center;
+        background-color: #24a7c6;
+        line-height: 0.38rem;
+        vertical-align: middle;
+    }
+
+  .main .course .game-text i {
     position: absolute;
     left: 0;
     top: 50%;
@@ -545,20 +605,30 @@ html {
     border: 1px solid #888888;
     border-radius: 50%; }
   .main .course .killer img, .main .course .last-words img {
-    padding: 0.05rem; }
+      position: absolute;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+    }
+  .killer .kill-result{
+      font-size: 0.14rem!important;
+  }
   .main .course .killer {
     margin-top: 0.1rem; }
     .main .course .killer img {
+
       width: 0.15rem;
       height: 0.18rem; }
+
   .main .course .last-words img {
-    margin-top: 0.01rem;
     width: 0.18rem;
     height: 0.18rem; }
 
 .footer {
   height: 0.6rem;
-  position: relative;
+  width: 100%;
+  position:fixed;
+    bottom: 0;
   background-color: #99dff0;
   opacity: 1; }
   .footer #close-game {
