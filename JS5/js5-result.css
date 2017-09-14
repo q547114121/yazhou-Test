@@ -1,0 +1,35 @@
+.navbar .navbar-right{
+    padding-right: 50px;
+}
+.navbar .navbar-right .form-group{
+    padding-right: 40px;
+    font-size: 15px;
+}
+.navbar .navbar-right .form-group a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.container{
+    margin: 0;
+    width: 100%;
+}
+
+.container button{
+    font-size: 18px;
+    padding: 10px 20px ;
+    color: #1d7ad9;
+}
+.container .col-md-10{
+    border-left: 1px solid #ccc;
+}
+.sidebar{
+    text-align: center;
+}
+.container .students-info{
+    padding-right: 10px;
+   margin-left: 50px;
+    height: 500px;
+    border: 1px solid #1d7ad9;
+
+}

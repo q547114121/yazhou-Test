@@ -1,0 +1,67 @@
+.banner{
+    width: 100%;
+    /*height: 668px;*/
+    background-image:url("photo/1.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.load-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    width: 500px;
+    height: 350px;
+    background-color: snow;
+    border-radius: 10px;
+
+}
+.load-box h3 {
+    text-align: center;
+    margin: 20px 0;
+    color:rgb(52,175,241);
+}
+.load-box .form-horizontal {
+    /*padding-left: 80px;*/
+    padding: 0 40px;
+    margin-left: 25px;
+}
+
+.load-box .form-group{
+    border: 1px solid #ccc;
+    width: 400px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.load-box input {
+    height: 45px;
+    border: none;
+}
+.load-box .col-sm-11{
+    padding-right: 0;
+}
+.load-box .form-group .control-label{
+    height: 45px;
+}
+.load-box .form-group .glyphicon{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.load-box .form-group .col-sm-12{
+    text-align: center;
+}
+.load-box .button-container{
+    border: none;
+}
+.load-box .form-group button{
+    height: 50px;
+    width: 150px;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.load-box  p{
+    color: red;
+    font-size: 18px;
+}
